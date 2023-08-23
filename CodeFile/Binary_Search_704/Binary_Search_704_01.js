@@ -27,6 +27,7 @@ search(list, target);
     --> [Solved] Set the limited in else if statement
 
     [Results]:
-        Runtime is 70ms; Beats 16.09%;
+        Runtime     70ms;       Beats 16.09%;
         Memory      45.35mb;    Beats 19.08 of users with JavaScript
+        Time Complexity O(n);
  */
