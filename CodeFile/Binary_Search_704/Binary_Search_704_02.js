@@ -50,6 +50,11 @@ var search = function(nums, target){
     3. understand the difference between [left, rigth) and [left, right]
             --> if count length, left can't equal to right. (out of the index)
 
+    [Results]:
+        Runtime     68ms;       Beats 22.23%;
+        Memory      45.10mb;    Beats 49.35 of users with JavaScript
+        Time Complexity O(logn);
+
  */
 
 let list = [-1,0,3,5,9,12];
