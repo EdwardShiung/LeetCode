@@ -9,15 +9,17 @@ var reverseList = function(head) {
 
     let previous = null;
     let current = head;
-    console.log(current);
+
     while(current != null){
+        //save the current next node to a temporary variable
         let nextNode = current.next;
+        //change the direction
         current.next = previous;
+        //move the pre & current pointer
         previous = current;
         current = nextNode;
     }
 
-    console.log(previous);
     return previous;
 
 };
