@@ -26,6 +26,7 @@ var swapPairs = function(head) {
 };
 
 
+
 /*
     1. I did this question at the first time like that:
 
