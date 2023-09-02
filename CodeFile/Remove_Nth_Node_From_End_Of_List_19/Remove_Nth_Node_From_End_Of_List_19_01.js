@@ -37,5 +37,4 @@ var removeNthFromEnd = function(head, n) {
 
     3. don't forget to return list.next, not list, because you can't count the head of 0(Virtual Head)
 
-
  */
