@@ -21,12 +21,16 @@ function twoSum(nums, target) {
         //Calculate current rest number
         const complement = target - nums[i];
         // if rest number in the Hash table, retun the index
+        console.log("Complement: "+complement);
         if (complement in numIndexMap) {
             console.log([numIndexMap[complement], i])
+
             return [numIndexMap[complement], i];
         }
         //Keep the index and number in the hash table
+        console.log(numIndexMap);
         numIndexMap[nums[i]] = i;
+
     }
 
     //if no sum solution, throw error
@@ -82,7 +86,7 @@ function twoSum(nums, target) {
 // console.log(map_02.keys())      //{ 1, 2 }
 // console.log(map_02.entries())
 
-let nums = [2,7,11,15];
+let nums = [2,11,7,15];
 let target = 9;
 
 twoSum(nums,target);

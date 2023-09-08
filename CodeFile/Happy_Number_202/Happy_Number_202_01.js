@@ -1,6 +1,4 @@
-
-
-//[1st]
+//[1st]: Using the Set Function
 const getSum = num => {
     let total = 0;
 
