@@ -14,7 +14,7 @@ var fourSumCount = function(nums1, nums2, nums3, nums4) {
             twoSumMap.set(sum, (twoSumMap.get(sum) || 0) + 1);
         }
     }
-
+    console.log(twoSumMap);
     for(const n3 of nums3){
         for(const n4 of nums4){
             let sum = n3 + n4;
