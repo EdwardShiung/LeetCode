@@ -41,7 +41,7 @@ var repeatedSubstringPattern = function(s) {
 
 
             //verify is repeated or not
-            //知道有幾組後，只要判斷最後一組即可！！
+            //從第一組之後開始判斷（因為，第一組已經先分給 subString）
             for(let i = 1; i < rep; i ++){
                 for(let j = 0; j < subStrlength; j ++){
                     if(s[i * subStrlength + j] !== subString[j]){
