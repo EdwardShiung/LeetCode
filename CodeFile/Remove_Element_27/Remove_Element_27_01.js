@@ -30,6 +30,7 @@ var removeElement = function(nums, val) {
             slow ++;
         }
     }
+    console.log(slow)
     return slow;
 }
 
