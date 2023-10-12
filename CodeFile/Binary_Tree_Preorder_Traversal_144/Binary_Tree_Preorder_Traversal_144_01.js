@@ -1,4 +1,5 @@
 //[1st]
+
 var preorderTraversal = function(root) {
 
     let res = [];
