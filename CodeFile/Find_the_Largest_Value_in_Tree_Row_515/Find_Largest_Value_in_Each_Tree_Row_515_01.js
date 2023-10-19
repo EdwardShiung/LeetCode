@@ -18,6 +18,7 @@ var largestValues = function(root){
 
     while(queue.length){
         let size = queue.length;
+        //[Key Point]: 先指定第一個給 max
         let max = queue[0].val;
         while(size --){
             let cur = queue.shift();
