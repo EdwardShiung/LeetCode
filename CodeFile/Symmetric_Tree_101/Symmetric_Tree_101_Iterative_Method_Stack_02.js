@@ -27,7 +27,6 @@ var isSymmetric = function(root){
         if(leftNode === null && rightNode === null) continue;
         if(leftNode === null || rightNode === null) return false;
         if(leftNode.val !== rightNode.val ) return false;
-        if(leftNode.val !== rightNode.val) return false;
 
 
         stack.push(leftNode.left);
