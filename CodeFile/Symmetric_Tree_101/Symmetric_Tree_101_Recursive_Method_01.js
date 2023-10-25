@@ -1,4 +1,5 @@
-//[1st]: Iterative Method
+//[1st]:
+//Recursive Method
 
 //ES5
 function TreeNode(val, left, right){
