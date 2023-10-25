@@ -13,29 +13,22 @@ var isSymmetric = function(root){
     if(root === null) return true;
 
     console.log(root.left, root.right);
-    return compared(root.left, root.right);
+    return comparedNode(root.left, root.right);
 
 }
 
-function compared(rootLeft, rootRight){
+function comparedNode(Left, Right){
 
     //determined the situation of which node is null.
 
-    //以下這個寫法，無法確定 rootLeft 或 rootRight 為 null
-    // if(rootLeft === null && rootRight === null) return true;
-    // if(rootLeft === null && rootRight !== null) return false;
-    // if(rootLeft !== null && rootRight === null) return false;
+    if(Left === null && Right === null) return true;
+    if(Left === null && Right !== null) return false;
+    if(Left !== null && Right === null) return false;
+    if(Left.val !== Right.val) return false;
 
-
-    //改用這種寫法：
-    if (rootLeft === null && rootRight === null) return true;
-    if (rootLeft === null || rootRight === null) return false;
-    if(rootLeft.val !== rootRight.val) return false;
-
-    //after above situation, which value is the same
     //Recursive Method Determine:
-    let outside = compared(rootLeft.left, rootRight.right);
-    let inside = compared(rootLeft.right, rootRight.left);
+    let outside = comparedNode(Left.left, Right.right);
+    let inside = comparedNode(Left.right, Right.left);
 
     // console.log(true);
     return outside && inside;
@@ -51,7 +44,8 @@ root.right.left = new TreeNode(4);
 root.right.right = new TreeNode(3);
 
 
-compared(root);
+comparedNode(root);
+// console.log(root);
 
 
 /**
