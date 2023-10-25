@@ -17,20 +17,20 @@ var isSymmetric = function(root){
 
 }
 
-function comparedNode(Left, Right){
+function comparedNode(left, right){
 
+    // console.log(left)
     //determined the situation of which node is null.
 
-    if(Left === null && Right === null) return true;
-    if(Left === null && Right !== null) return false;
-    if(Left !== null && Right === null) return false;
-    if(Left.val !== Right.val) return false;
+    if(left === null && right === null) return true;
+    if(left === null || right === null) return false;
+    if(left.val !== right.val) return false;
 
     //Recursive Method Determine:
-    let outside = comparedNode(Left.left, Right.right);
-    let inside = comparedNode(Left.right, Right.left);
+    let outside = comparedNode(left.left, right.right);
+    let inside = comparedNode(left.right, right.left);
 
-    // console.log(true);
+    console.log(outside && inside);
     return outside && inside;
 }
 
@@ -44,8 +44,8 @@ root.right.left = new TreeNode(4);
 root.right.right = new TreeNode(3);
 
 
-comparedNode(root);
 // console.log(root);
+isSymmetric(root);
 
 
 /**
