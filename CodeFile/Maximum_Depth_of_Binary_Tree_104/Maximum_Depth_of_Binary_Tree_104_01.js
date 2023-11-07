@@ -1,4 +1,4 @@
-//[1st]
+//[1st]: Iterative Method
 
 //ES5
 function TreeNode(val, left, right){
