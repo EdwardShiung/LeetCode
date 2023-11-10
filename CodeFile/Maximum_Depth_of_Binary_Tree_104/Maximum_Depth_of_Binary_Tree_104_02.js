@@ -16,8 +16,11 @@ var maxDepth = function(root){
         if(node === null) return 0;
 
         //Step 3:確定每一層邏輯關係：
+        //左：
         const leftHeight = getHeight(node.left);
+        //右：
         const rightHeight = getHeight(node.right);
+        //中：
         const height = 1 + Math.max(leftHeight,rightHeight);
 
         return height;
