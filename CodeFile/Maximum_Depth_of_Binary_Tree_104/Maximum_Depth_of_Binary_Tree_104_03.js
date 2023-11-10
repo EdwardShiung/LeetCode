@@ -27,7 +27,7 @@ var maxDepth = function(root){
             //Step 2: 再處理 左 和 右：
 
             //確認終止條件：
-            if(node.left === null && node.right === null) return 0;
+            if(node.left === null && node.right === null) return result;
 
             //Step 3: 確認每一層邏輯關係：
 
@@ -73,5 +73,7 @@ maxDepth(root);
  * 這部分有幾個問題：
     1. 本地端 結果為  Nan; leetcode 網站卻可以執行
         --> 目前已修正，但尚未搞懂原因
+        --> (須了解 ES5 和 ES6 this 差異)
     2. 寫法老舊 ES5。請改用 ES6 class 方式寫出。
+        --> 請看 4th 解法。
  */
