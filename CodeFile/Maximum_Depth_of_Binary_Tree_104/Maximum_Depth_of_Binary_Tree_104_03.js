@@ -20,10 +20,9 @@ var maxDepth = function(root){
         //Step 1: 確認參數及返回值：
     const getDepth = (node, depth) =>{
 
-
             //前序是 中, 左, 右：
             //先處理 中：
-            result = Math.max(this.result, depth)
+            result = Math.max(result, depth)
 
             //Step 2: 再處理 左 和 右：
 
@@ -68,3 +67,11 @@ root.right.right = new TreeNode(7);
 
 // console.log(root);
 maxDepth(root);
+
+
+/**
+ * 這部分有幾個問題：
+    1. 本地端 結果為  Nan; leetcode 網站卻可以執行
+        --> 目前已修正，但尚未搞懂原因
+    2. 寫法老舊 ES5。請改用 ES6 class 方式寫出。
+ */
