@@ -17,7 +17,6 @@ class Solution{
         this.result = 0;
     }
 
-
     //計算maxDepth
     maxDepth(root){
         //root === null

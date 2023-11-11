@@ -3,7 +3,7 @@
 //ES5
 // function Node(val, children){
 //     this.val = val;
-//     this.children = childre || [];
+//     this.children = children || [];
 // }
 
 //ES6
