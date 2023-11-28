@@ -1,4 +1,4 @@
-//[2nd]:Recursive Method
+//[2nd]:Recursive Method - PreOrder
 
 /*
     對於遞歸法，從本題來看，利用前序可以輕易解決。
