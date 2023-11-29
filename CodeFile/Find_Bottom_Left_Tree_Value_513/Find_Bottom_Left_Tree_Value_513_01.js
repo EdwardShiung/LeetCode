@@ -45,6 +45,8 @@ var findBottomLeftValue = function(root) {
 
             let cur = queue.shift();
 
+            console.log(cur)
+
             if(i === 0) result = cur.val;
 
             if(cur.left) queue.push(cur.left);
