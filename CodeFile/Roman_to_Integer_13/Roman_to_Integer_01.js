@@ -4,6 +4,7 @@
 var romanToInt = function(s) {
 
     //Storing letters and corresponding values to the object
+    //If C or Java, we can use the hashtable to store the value
     const dic = {
         "I" : 1,
         "V" : 5,
