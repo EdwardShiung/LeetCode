@@ -67,6 +67,6 @@ root.right.left = new TreeNode(13);
 root.right.left.left = new TreeNode(4);
 root.right.left.left = new TreeNode(1);
 
-// console.log(root);
+console.log(root);
 
 hasPathSum(root,22);
