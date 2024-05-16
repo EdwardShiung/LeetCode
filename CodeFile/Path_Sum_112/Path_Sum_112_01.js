@@ -1,4 +1,4 @@
-//[1st]: Path Sum: Recursive method
+//[1st]: Path Sum: Recursive Method
 
 /**
  Question:

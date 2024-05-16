@@ -64,12 +64,12 @@ let traversal = (node, count, path, res) => {
         //注意：要"深拷貝" 不能寫 res.push(path);
         res.push([...path]);
         //找到後，向上至 root 回溯
-
+        console.log("true");
         return true;
     }
     //遇到葉子節點，但是沒有找到 targetSum 直接返回
     if(node.left === null && node.right === null && count !== 0){
-
+        console.log("false");
         return false
     }
     //Step 3: 單層循環
@@ -87,7 +87,7 @@ let traversal = (node, count, path, res) => {
         traversal(node.right, count - node.right.val, path, res);
         path.pop();
     }
-
+    console.log("false");
     return false;
 }
 
