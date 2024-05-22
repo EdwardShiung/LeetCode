@@ -15,7 +15,7 @@ int main(){
     The approach to this problem
     1. Put all elements to the nums1 Array.
     2. Sorted elements 
-        Ex: Bubble Sort
+        Ex: Bubble Sort, Merge Sort, qsort....
 
     - Before: 
         - Bubble Sort
