@@ -29,7 +29,7 @@ int main(){
     3rd     [2,2,_,_]
     Begin      ^
     End        ^
-
+        --> Begin == End --> loop finish
         --> return tail + 1
 */
 
