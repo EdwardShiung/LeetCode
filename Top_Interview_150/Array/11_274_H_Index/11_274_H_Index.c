@@ -80,7 +80,7 @@ int hIndex(int* citations, int citationsSize){
     
     Index        0  1  2  3  4
                 [0, 1, 3, 5, 6]
-    location     1  2  3  4  5
+    position     1  2  3  4  5
 
     If the number greater than or equal to than location, it could be a h-index. 
     Above that, 3 is the h-index.
