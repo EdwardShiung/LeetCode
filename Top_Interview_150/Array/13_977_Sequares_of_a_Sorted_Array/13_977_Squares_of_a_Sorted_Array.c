@@ -35,7 +35,6 @@ int* sortedSquares(int* nums, int numsSize, int* returnSize){
     return result;
 }
 
-
 /*
     [Thought]:
     
