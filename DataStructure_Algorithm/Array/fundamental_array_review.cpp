@@ -34,7 +34,6 @@ void fundamentalArray(){
     cout << "&array[0][0]:\t\t" << (long)&array[0][0] << endl;
 
 
-    
 
 
 }
