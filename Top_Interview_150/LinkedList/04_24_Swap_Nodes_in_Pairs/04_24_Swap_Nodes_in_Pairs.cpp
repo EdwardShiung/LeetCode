@@ -23,26 +23,26 @@ struct ListNode {
 class Solution {
     public:
         ListNode* swapPairs(ListNode* head) {
-            // Set a virtual head to the List
-            ListNode* dummyHead = new ListNode(0);
-            dummyHead->next = head;
-            // Set a curr pointer
-            ListNode* curr = dummyHead;
-            while((curr->next != NULL) && (curr->next->next != NULL)) {
+        // 設置一個虛擬節點
+        ListNode* dummyHead = new ListNode(0); 
+        // 将虚拟头结点指向head，这样方便后面做删除操作
+        dummyHead->next = head; 
+        ListNode* cur = dummyHead;
+        while(cur->next != nullptr && cur->next->next != nullptr) {
+            // 记录临时节点
+            ListNode* tmp = cur->next; 
+            // 记录临时节点
+            ListNode* tmp1 = cur->next->next->next; 
 
-                // Record temp node
-                ListNode* temp = curr->next;
+            cur->next = cur->next->next;    // 步骤一
+            cur->next->next = tmp;          // 步骤二
+            cur->next->next->next = tmp1;   // 步骤三
 
-                curr->next = curr->next->next;
-
-
-                curr->next->next = temp;
-
-
-                //Move two nodes for next round
-                curr = curr->next->next;
-            }
-            return head;
+            cur = cur->next->next; // cur移动两位，准备下一轮交换
+        }
+        ListNode* result = dummyHead->next;
+        delete dummyHead;
+        return result;
         }
 };
 
