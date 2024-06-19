@@ -17,8 +17,19 @@ struct ListNode {
             
             (2) next(NULL)：將成員變數 next 初始化為 NULL。
     */
-    ListNode(int val): val(val), next(NULL){};
+    ListNode(int val): val(val), next(nullptr){};
 };
+
+void printLinkedList(ListNode* list) {
+    ListNode* curr = list;
+    while(curr != NULL) {
+        int val = curr->val;
+        cout << val << " ";
+        curr = curr->next;
+    }
+    cout << endl;
+};
+
 
 class Solution {
     public:
@@ -43,11 +54,22 @@ class Solution {
         ListNode* result = dummyHead->next;
         delete dummyHead;
         return result;
-        }
+        };
 };
 
 
 
 int main(){
+    ListNode* list = new ListNode(1);
+    list->next = new ListNode(2);
+    list->next->next = new ListNode(3);
+    list->next->next->next = new ListNode(4);
+    printLinkedList(list);
 
+    Solution sol;
+
+    list = sol.swapPairs(list);
+    printLinkedList(list);
+
+    return 0;
 }
