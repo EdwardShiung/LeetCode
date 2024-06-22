@@ -29,7 +29,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         // Create unordered_map <key, value>
-        std::unordered_map <int, int> map;
+        unordered_map <int, int> map;
 
         for(int i = 0; i < nums.size(); i++) {
             // iterate the element and find the key whether is suitable for the target.
