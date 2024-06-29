@@ -16,7 +16,7 @@ Output: print a new string where each numeric character is replaced with "number
 
 Sample input: a1b2c3
 
-Sample output: anumberbnumbercnumber
+Sample output: anumberbnumbercnumber 
 
 Data range: 1 <= s.length < 10000.
 
