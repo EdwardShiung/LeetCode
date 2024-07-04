@@ -1,7 +1,8 @@
 # LeetCode Daily Challenge
----
+
+<small>
 Starting from May 21, 2024, I have committed to solving at least one LeetCode problem daily, primarily to document and improve my algorithmic speed. Currently, I am practicing exclusively using the C/C++ programming language. Additionally, I am review and reimplementing algorithms and data structures. At present, some of code explanations are in Chinese. However, after the website update, I plan to migrate some key concepts to the website and provide detailed explanations in English.
----
+</small>
 
 ## Topic Categories
 
@@ -62,7 +63,7 @@ More [Hashmap Problem]()
 
 [LeetCode_203_01_Remove Linked List Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/LinkedList/01_203_Remove_linked_list_Elements/01_203_Remove_Linked_List_Elements.cpp) - 2024-06-05
 <!-- More on -->
-More [Linked List Problem]
+More [Linked List Problem]()
 </td><td valign="top" width="33%">
 
 </td></tr></table>
@@ -102,13 +103,10 @@ More [Array Problem]()
 More [TBD...]()
 </td><td valign="top" width="33%">
 
-<<<<<<< HEAD
-=======
 ### TBD...
 <!--  -->
 
 More [TBD...]()
 </td><td valign="top" width="33%">
 
->>>>>>> 8d75f2a (Update LeetCode README file)
 </td></tr></table>
