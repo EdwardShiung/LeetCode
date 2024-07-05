@@ -10,6 +10,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### String Problem
 <!-- String Problem List -->
+[LeetCode_459_07_Repeated Substring Pattern](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StringQuestion/07_459_Repeated_Substring_Pattern/07_459_Repeated_Substring_Pattern.cpp) - 2024-07-04
+
 [LeetCode_28_06_Find the Index of the First Occurrence in a String](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StringQuestion/06_28_Find_the_Index_of_the_First_Occurrence_in_a_Strgin/06_28_Find_the_Index_of_the_First_Occurrence_in_a_String.cpp) - 2024-07-03
 
 [Other Source_05_Right Rotation of a String](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StringQuestion/05_Right_Rotation_of_a_String/05_Right_Rotation_of_a_String.cpp) - 2024-07-02
