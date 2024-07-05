@@ -10,9 +10,11 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Stack & Queue Problem
 <!-- Stack & Queue Problem List -->
-[LeetCode_232_01_Implement Queue using Stack](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/01_232_Implement_Queue_using_Stack/01_232_Implement_Queue_using_Stack.cpp) - 2024-07-05
+[LeetCode_20_03_Valid Parentheses](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/03_20_Valid_Parentheses/03_20_Valid_Parentheses.cpp) - 2024-07-05
 
 [LeetCode_225_02_Implement Stack using Queue](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/02_225_Implement_Stack_using_Queues/02_225_Implement_Stack_using_Queues.cpp) - 2024-07-05
+
+[LeetCode_232_01_Implement Queue using Stack](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/01_232_Implement_Queue_using_Stack/01_232_Implement_Queue_using_Stack.cpp) - 2024-07-05
 
 </td><td valign="top" width="34%">
 
