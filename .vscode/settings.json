@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "string": "cpp"
-    }
+        "string": "cpp",
+        "queue": "cpp",
+        "unordered_map": "cpp"
+    },
+    "cSpell.words": [
+        "logn"
+    ]
 }
