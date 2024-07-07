@@ -6,17 +6,24 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ## Topic Categories
 
-<table><tr><td valign="top" width="33%">
+<table>
+<tr>
+<td valign="top" width="33%">
 
 ### Stack & Queue Problem
 <!-- Stack & Queue Problem List -->
+[LeetCode_1047_04_Remove All Adjacent Duplicates in String](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/04_1047_Remove_All_Adjacent_Duplicates_in_String/04_1047_Remove_All_Adjacent_Duplicates_in_String.cpp) - 2024-07-06
+
 [LeetCode_20_03_Valid Parentheses](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/03_20_Valid_Parentheses/03_20_Valid_Parentheses.cpp) - 2024-07-05
 
 [LeetCode_225_02_Implement Stack using Queue](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/02_225_Implement_Stack_using_Queues/02_225_Implement_Stack_using_Queues.cpp) - 2024-07-05
 
 [LeetCode_232_01_Implement Queue using Stack](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/01_232_Implement_Queue_using_Stack/01_232_Implement_Queue_using_Stack.cpp) - 2024-07-05
+<!-- More on -->
+More [Stack & Queue Problem]()
+</td>
 
-</td><td valign="top" width="34%">
+<td valign="top" width="33%">
 
 ### String Problem
 <!-- String Problem List -->
@@ -35,7 +42,9 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_344_01 Reverse String](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StringQuestion/01_344_Reverse_String/01_344_Reverse_String.cpp) - 2024-06-26
 <!-- More on -->
 More [String Problem]()
-</td><td valign="top" width="34%">
+</td>
+
+<td valign="top" width="34%">
 
 ### Hashmap Problem
 <!-- Hashmap Problem List -->
@@ -56,14 +65,18 @@ More [String Problem]()
 [LeetCode_349_01_Valid Anagram](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Hashmap/01_242_Valid_Anagram/01_242_Valid_Anagram.cpp) - 2024-06-14
 <!-- More on -->
 More [Hashmap Problem]()
-</td><td valign="top" width="33%">
+</td>
+
+</tr>
+
+</table>
 
 
+<table>
 
+<tr>
 
-</td></tr></table>
-
-<table><tr><td valign="top" width="33%">
+<td valign="top" width="33%">
 
 ### Linked List Problem
 <!-- Linked List Problem List -->
@@ -82,7 +95,9 @@ More [Hashmap Problem]()
 [LeetCode_203_01_Remove Linked List Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/LinkedList/01_203_Remove_linked_list_Elements/01_203_Remove_Linked_List_Elements.cpp) - 2024-06-05
 <!-- More on -->
 More [Linked List Problem]()
-</td><td valign="top" width="33%">
+</td>
+
+<td valign="top" width="33%">
 
 ### Array Problem
 <!-- Array Problem List -->
@@ -109,12 +124,16 @@ More [Linked List Problem]()
 [LeetCode_169_05_Majority Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Array/05_169_Majority_Element/05_169_Majority_Element.c) - 2024-05-21
 <!-- More on -->
 More [Array Problem]()
-</td><td valign="top" width="33%">
+</td>
+
+<td valign="top" width="33%">
 
 ### TBD...
 <!--  -->
 
 More [TBD...]()
-</td><td valign="top" width="33%">
+</td>
 
-</td></tr></table>
+</tr>
+
+</table>
