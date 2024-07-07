@@ -12,6 +12,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Stack & Queue Problem
 <!-- Stack & Queue Problem List -->
+[LeetCode_150_05_Evaluate Reverse Polish Notation](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/05_150_Evaluate_Reverse_Polish_Notation/05_150_Evaluate_Reverse_Polish_Notation.cpp) - 2024-07-06
+
 [LeetCode_1047_04_Remove All Adjacent Duplicates in String](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/04_1047_Remove_All_Adjacent_Duplicates_in_String/04_1047_Remove_All_Adjacent_Duplicates_in_String.cpp) - 2024-07-06
 
 [LeetCode_20_03_Valid Parentheses](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/03_20_Valid_Parentheses/03_20_Valid_Parentheses.cpp) - 2024-07-05
