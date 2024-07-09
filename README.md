@@ -8,6 +8,16 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 <table>
 <tr>
+
+<td valign="top" width="33%">
+
+### Binary Tree Problem
+<!-- Binary Tree Problem List -->
+[LeetCode_144_01_Binary Tree Preorder Traversal](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/01_144_Binary_Tree_Preorder_Traversal/01_144_Binary_Tree_Preorder_Traversal.cpp) - 2024-07-08
+
+More [Binary Tree Problem]()
+</td>
+
 <td valign="top" width="33%">
 
 ### Stack & Queue Problem
@@ -29,7 +39,7 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 More [Stack & Queue Problem]()
 </td>
 
-<td valign="top" width="33%">
+<td valign="top" width="34%">
 
 ### String Problem
 <!-- String Problem List -->
@@ -49,6 +59,17 @@ More [Stack & Queue Problem]()
 <!-- More on -->
 More [String Problem]()
 </td>
+
+
+
+</tr>
+
+</table>
+
+
+<table>
+
+<tr>
 
 <td valign="top" width="34%">
 
@@ -72,15 +93,6 @@ More [String Problem]()
 <!-- More on -->
 More [Hashmap Problem]()
 </td>
-
-</tr>
-
-</table>
-
-
-<table>
-
-<tr>
 
 <td valign="top" width="33%">
 
@@ -130,14 +142,6 @@ More [Linked List Problem]()
 [LeetCode_169_05_Majority Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Array/05_169_Majority_Element/05_169_Majority_Element.c) - 2024-05-21
 <!-- More on -->
 More [Array Problem]()
-</td>
-
-<td valign="top" width="33%">
-
-### TBD...
-<!--  -->
-
-More [TBD...]()
 </td>
 
 </tr>
