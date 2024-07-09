@@ -221,4 +221,77 @@ int main() {
     因此，`reverse` 函式屬於 C++ 標準庫的 `<algorithm>` API 集合，而不是某個類別的成員函式。
 
 
+--> ANS+02: 因此
+
+    在 C++ 中，`::` 和 `:` 有不同的用法和含義：
+
+    1. **`::`（範圍解析運算符，Scope Resolution Operator）**：
+        - 用於訪問命名空間中的成員。
+        - 用於訪問類別中的靜態成員。
+        - 用於指定全局命名空間。
+
+        例如：
+        ```cpp
+        // 使用 std 命名空間中的成員
+        std::vector<int> vec;
+
+        // 訪問類別的靜態成員
+        class MyClass {
+        public:
+            static int staticMember;
+        };
+
+        int MyClass::staticMember = 42;
+
+        // 訪問全局變數或函式
+        int ::globalVariable;
+        ```
+
+    2. **`:`（冒號）**：
+        - 用於類別繼承。
+        - 用於構造函式初始化列表。
+
+        例如：
+        ```cpp
+        // 類別繼承
+        class Base {
+        };
+
+        class Derived : public Base {
+        };
+
+        // 構造函式初始化列表
+        class MyClass {
+        public:
+            int x;
+            MyClass(int val) : x(val) {  // 初始化列表
+            }
+        };
+        ```
+
+    ### 常見情況
+
+    - **使用命名空間 `std` 時**：使用 `::` 來訪問命名空間中的成員。
+        ```cpp
+        std::vector<int> vec;
+        std::cout << "Hello, World!" << std::endl;
+        ```
+
+    - **類別繼承和構造函式初始化列表**：使用 `:`
+        ```cpp
+        class Base {
+        };
+
+        class Derived : public Base {  // 類別繼承
+        };
+
+        class MyClass {
+        public:
+            int x;
+            MyClass(int val) : x(val) {  // 構造函式初始化列表
+            }
+        };
+        ```
+
+    總之，`::` 用於命名空間或類別範圍解析，而 `:` 則用於類別繼承和構造函式初始化列表。它們在 C++ 中有著明確且不同的用途。
 */
