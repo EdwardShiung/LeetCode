@@ -43,7 +43,7 @@ public:
         // put the root into queue
         queue.push(root);
 
-        // while-loop to 
+        // while loop for run each layer
         while(!queue.empty()) {
             // Each layer has size of node
             int size = queue.size();
@@ -52,8 +52,8 @@ public:
 
             // for-loop each layer
             for(int i = 0; i < size; i++) {
-                TreeNode* cur = queue.front();
                 // Pointer to the node
+                TreeNode* cur = queue.front();
                 // Save the node value in results
                 vec.push_back(cur->val);
                 // pop the node 
