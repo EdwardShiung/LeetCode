@@ -4,7 +4,7 @@ using namespace std;
 
 /*
 
-    The concept is the same with level order traversal by using queue to do that
+    The concept is the same with level order traversal by using queue to do that.
 
 */
 
