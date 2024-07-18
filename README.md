@@ -13,6 +13,7 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_111_16_Minimum Depth of Binary Tree](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/16_111_Minimum_Depth_of_Binary_Tree/16_111_Minimum_Depth_of_Binary_Tree.cpp) - 2024-07-18
 
 [LeetCode_104_15_Maximum Depth of Binary Tree](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/15_104_Maximum_Depth_of_Binary_Tree/15_104_Maximum_Depth_of_Binary_Tree.cpp) - 2024-07-18
 
