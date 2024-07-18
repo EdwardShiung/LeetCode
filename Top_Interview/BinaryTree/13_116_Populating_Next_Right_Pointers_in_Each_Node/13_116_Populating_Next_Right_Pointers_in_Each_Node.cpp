@@ -37,6 +37,8 @@ struct Node {
 };
 
 /*
+  [Similar Question]
+  1. The question is similar with LeetCode 117.
   [Review]
     1. 上述 Constructor 中，可以看到有些有下底線，有些沒有。這是用來區分哪些是成員函數、
     哪些是參數函數。
