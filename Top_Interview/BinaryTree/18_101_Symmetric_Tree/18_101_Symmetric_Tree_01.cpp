@@ -98,8 +98,8 @@ int main() {
     for(int i : results) {
         cout << i << " ";
     }
-    cout << endl;   
-    
+    cout << endl;
+
     return 0;
 
 }
