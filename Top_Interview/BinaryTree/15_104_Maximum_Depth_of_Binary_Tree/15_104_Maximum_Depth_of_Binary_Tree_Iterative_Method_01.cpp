@@ -4,8 +4,28 @@ using namespace std;
 
 /*
 
-    The concept is the same with level order traversal by using queue to do that.
+    [Question]
+    Given the root of a binary tree, return its maximum depth.
 
+    A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+    [Thought]
+    1. Maximum Depth could use Recursive Method and Iterative Method.
+        - Recursive Method
+            - PreOrder Method
+            - PostOrder Method
+        - Iterative Method
+            - Queue Method
+            - Stack Method
+    
+    2. Using "Iterative (Queue) Method" to solve the problem
+
+        -   The concept is the same with level order traversal by using queue to do that.
+        -   Using "Queue level order traversal Template" could solve the problem
+    
+    [Similar LeetCode Problem]
+    1. LeetCode 104
+    2. LeetCode 559
 */
 
 struct TreeNode {
