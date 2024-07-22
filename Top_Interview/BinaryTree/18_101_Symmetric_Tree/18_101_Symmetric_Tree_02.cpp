@@ -6,10 +6,13 @@ using namespace std;
 /*
 
     [Thought]
+
     1. Iterative Method_Queue Method
         --> 可以思考成樹根，帶有兩個節點（一左、一右）
         --> 每次比較左右兩邊是否相等即可！
             --> 放的順序和比較的順序相同
+
+    2. 請注意：這個不是層序遍歷
 
 */
 
