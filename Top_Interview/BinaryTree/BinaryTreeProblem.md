@@ -1,11 +1,13 @@
 # Binary Tree Problem
-[LeetCode_101_21_Symmetric Tree (Iterative Method Queue Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree_02.cpp) - 2024-07-22
+[LeetCode_101_22_Symmetric Tree (Iterative Method Queue Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree_02.cpp) - 2024-07-22
 
-[LeetCode_101_20_Symmetric Tree (Recursive Method) ](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree.cpp) - 2024-07-22
+[LeetCode_101_21_Symmetric Tree (Recursive Method) ](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree.cpp) - 2024-07-22
 
-[LeetCode_226_19_Invert Binary Tree](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/17_226_Invert_Binary_Tree/17_226_Invert_Binary_Tree.cpp) - 2024-07-19
+[LeetCode_226_20_Invert Binary Tree](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/17_226_Invert_Binary_Tree/17_226_Invert_Binary_Tree.cpp) - 2024-07-19
 
-[LeetCode_111_18_Minimum Depth of Binary Tree](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/16_111_Minimum_Depth_of_Binary_Tree/16_111_Minimum_Depth_of_Binary_Tree.cpp) - 2024-07-18
+[LeetCode_111_19_Minimum Depth of Binary Tree (Recursive Method) (PostOrder Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/16_111_Minimum_Depth_of_Binary_Tree/16_111_Minimum_Depth_of_Binary_Tree_Recursive_Method_02.cpp) - 2024-07-23
+
+[LeetCode_111_18_Minimum Depth of Binary Tree (Iterative Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/16_111_Minimum_Depth_of_Binary_Tree/16_111_Minimum_Depth_of_Binary_Tree.cpp) - 2024-07-18
 
 [LeetCode_104_17_Maximum Depth of Binary Tree (Recursive Method) (Preorder Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/15_104_Maximum_Depth_of_Binary_Tree/15_104_Maximum_Depth_of_Binary_Tree_Recursive_Method_03.cpp) - 2024-07-22
 
