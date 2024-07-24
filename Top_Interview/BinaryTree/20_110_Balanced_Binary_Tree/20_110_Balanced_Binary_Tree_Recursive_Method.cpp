@@ -3,6 +3,20 @@ using namespace std;
 
 
 /*
+    [Question]
+        Given a binary tree, determine if it is height-balanced.
+    
+    Example_01:
+        Input: root = [3,9,20,null,null,15,7]
+        Output: true
+    
+    Example_02:
+        Input: root = [1,2,2,3,3,null,null,4,4]
+        Output: false
+
+    Example_03:
+        Input: root = []
+        Output: true
 
     [Thought]
     1. 本題可以用 "Recursive Method" 或 "Iterative Method"。但要記住，使用 Iterative Method 方法時，無法使用 Level Order Traversal。
