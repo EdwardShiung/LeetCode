@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_222_23_Count Complete Tree Node (Recursive Method) (Postorder Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/19_222_Count_Complete_Tree_Node/19_22_Count_Complete_Tree_Node_Recursive_Method.cpp) - 2024-07-23
+
 [LeetCode_101_22_Symmetric Tree (Iterative Method Queue Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree_02.cpp) - 2024-07-22
 
 [LeetCode_101_21_Symmetric Tree (Recursive Method) ](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree.cpp) - 2024-07-22
