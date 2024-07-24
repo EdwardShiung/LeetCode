@@ -4,7 +4,9 @@
 using namespace std;
 
 
-/*
+/*  This question is very much worth reconsidering!! 
+    By practicing it multiple times, you can truly understand the concept being tested.
+
     [Question]
     Given the root of a binary tree, return all root-to-leaf paths in any order.
 
@@ -30,6 +32,11 @@ using namespace std;
     [Review]
         1. Backtracking Review
         2. to_string function
+        3. 本題，請多次練習，練習版本可以分為
+            --> (✓)非簡略版本          (Recursive Method)  --> Recursive_Method_01.cpp
+            --> (✓)簡略版本            (Recursive Method) -->  Recursive_Method_02.cpp
+            --> 迭代法                 (Iterative Method) -->  Stack Method
+                                                         --> "遞歸"能做的，"棧"也能做喔！
 */
 
 struct TreeNode {
