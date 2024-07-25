@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_513_27_Find Bottom Left Tree Value (Iterative Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/23_513_Find_Bottom_Left_Tree_Value/23_513_Find_Bottom_Left_Tree_Value_Iterative_Method.cpp) - 2024-07-24
+
 [LeetCode_404_26_Sum of Left Leaves](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/22_Sum_of_Left_Leaves/22_Sum_of_Left_Leaves_Recursive_Method.cpp) - 2024-07-24
 
 [LeetCode_257_25_Binary Tree Path (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/21_257_Binary_Tree_Paths/21_257_Binary_Tree_Path_Recursive_Method.cpp) - 2024-07-23
@@ -22,12 +24,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_222_23_Count Complete Tree Node (Recursive Method) (Postorder Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/19_222_Count_Complete_Tree_Node/19_22_Count_Complete_Tree_Node_Recursive_Method.cpp) - 2024-07-23
 
 [LeetCode_101_22_Symmetric Tree (Iterative Method Queue Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree_02.cpp) - 2024-07-22
-
-[LeetCode_101_21_Symmetric Tree (Recursive Method) ](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/18_101_Symmetric_Tree/18_101_Symmetric_Tree.cpp) - 2024-07-22
-
-[LeetCode_226_20_Invert Binary Tree](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/17_226_Invert_Binary_Tree/17_226_Invert_Binary_Tree.cpp) - 2024-07-19
-
-[LeetCode_111_19_Minimum Depth of Binary Tree (Recursive Method) (PostOrder Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/16_111_Minimum_Depth_of_Binary_Tree/16_111_Minimum_Depth_of_Binary_Tree_Recursive_Method_02.cpp) - 2024-07-23
 
 
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)
