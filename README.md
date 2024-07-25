@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_513_28_Find Bottom Left Tree Value (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/23_513_Find_Bottom_Left_Tree_Value/23_513_Find_Bottom_Left_Tree_Value_Recursive_Method_01.cpp) - 2024-07-24
+
 [LeetCode_513_27_Find Bottom Left Tree Value (Iterative Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/23_513_Find_Bottom_Left_Tree_Value/23_513_Find_Bottom_Left_Tree_Value_Iterative_Method.cpp) - 2024-07-24
 
 [LeetCode_404_26_Sum of Left Leaves](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/22_Sum_of_Left_Leaves/22_Sum_of_Left_Leaves_Recursive_Method.cpp) - 2024-07-24
