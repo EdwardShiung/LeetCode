@@ -17,6 +17,11 @@ using namespace std;
     Input: root = [1]
     Output: 0
 
+    [Thought]
+        1. The problem can be solved by "Recursive Method" and "Iterative Method".
+        2. Below the code, we use the "Recursive Method".
+
+
 */
 
 struct TreeNode {
