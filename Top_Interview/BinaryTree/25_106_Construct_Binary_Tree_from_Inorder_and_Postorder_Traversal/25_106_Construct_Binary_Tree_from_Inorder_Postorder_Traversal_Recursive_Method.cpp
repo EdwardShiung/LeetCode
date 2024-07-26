@@ -18,12 +18,21 @@ using namespace std;
         Output: [-1]
 
     [Thought]
-    Step_01: 如果後序 Array 為 0，返回空節點 (此為 Recursive Method 的終止條件)
-    Step_02: 如果不為空，後序 Array 中，最後一個元素為節點（根節點）
-    Step_03: 利用 step_02 找到的元素，作為中序 Array 的切割點
-    Step_04: 切割“中序 Array” ，切成中序左陣列、中序右陣列 (一定先切割中序 Array)
-    Step_05: 切割“後序 Array”，切成後序左陣列、後序右陣列
-    Step_06: 使用遞歸處理左區間、右區間
+        Step_01: 如果後序 Array 為 0，返回空節點 (此為 Recursive Method 的終止條件)
+        Step_02: 如果不為空，後序 Array 中，最後一個元素為節點（根節點）
+        Step_03: 利用 step_02 找到的元素，作為中序 Array 的切割點
+        Step_04: 切割“中序 Array” ，切成中序左陣列、中序右陣列 (一定先切割中序 Array)
+        Step_05: 切割“後序 Array”，切成後序左陣列、後序右陣列
+        Step_06: 使用遞歸處理左區間、右區間
+
+    --> 反思：下面的程式碼運行並不好，每層遞歸都要定義新的 vector，不但耗時，也耗費空間。
+            --> 但非常好理解！
+            --> 優化方式就是利用下標分割，不使用新的陣列，請看02版本。
+
+    [Similar Question]
+    1. LeetCode 106
+    2. LeetCode 105 
+    3. LeetCode 654
 */
 
 
