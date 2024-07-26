@@ -1,5 +1,7 @@
 # Binary Tree Problem
-[LeetCode_617_Merge Two Binary Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/27_617_Merge_Two_Binary_Tree/27_617_Merge_Two_Binary_Tree_Recursive_Method.cpp) - 2024-07-25
+[LeetCode_700_33_Search in a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/28_700_Search_in_a_Binary_Search_Tree/28_700_Search_in_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-26
+
+[LeetCode_617_32_Merge Two Binary Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/27_617_Merge_Two_Binary_Tree/27_617_Merge_Two_Binary_Tree_Recursive_Method.cpp) - 2024-07-25
 
 [LeetCode_654_31_Maximum Binary Tree (Recursive Method_01)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/26_654_Maximum_Binary_Tree/26_654_Maximum_Binary_Tree_Recursive_Method_01.cpp) - 2024-07-25
 
