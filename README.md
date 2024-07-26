@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_654_31_Maximum Binary Tree (Recursive Method_01)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/26_654_Maximum_Binary_Tree/26_654_Maximum_Binary_Tree_Recursive_Method_01.cpp) - 2024-07-25
+
 [LeetCode_106_30_Construct Binary Tree from Inorder Postorder Traversal (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/25_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/25_106_Construct_Binary_Tree_from_Inorder_Postorder_Traversal_Recursive_Method.cpp) - 2024-07-24
 
 [LeetCode_112_29_Path Sum (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/24_112_Path_Sum/24_112_Path_Sum_Recursive_Method.cpp) - 2024-07-24
@@ -22,11 +24,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_513_27_Find Bottom Left Tree Value (Iterative Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/23_513_Find_Bottom_Left_Tree_Value/23_513_Find_Bottom_Left_Tree_Value_Iterative_Method.cpp) - 2024-07-24
 
 [LeetCode_404_26_Sum of Left Leaves](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/22_Sum_of_Left_Leaves/22_Sum_of_Left_Leaves_Recursive_Method.cpp) - 2024-07-24
-
-[LeetCode_257_25_Binary Tree Path (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/21_257_Binary_Tree_Paths/21_257_Binary_Tree_Path_Recursive_Method.cpp) - 2024-07-23
-
-[LeetCode_110_24_Balanced Binary Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/20_110_Balanced_Binary_Tree/20_110_Balanced_Binary_Tree_Iterative_Method.cpp) - 2024-07-23
-
 
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)
 </td>
