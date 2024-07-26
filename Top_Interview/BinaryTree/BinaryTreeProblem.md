@@ -1,4 +1,6 @@
 # Binary Tree Problem
+[LeetCode_530_35_Minimum Absolute Difference in BST (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/30_530_Minimum_Absolute_Difference_in_BST/30_530_Minimum_Absolute_Difference_in_BST_Recursive_Method.cpp) - 2024-07-26
+
 [LeetCode_98_34_Validate Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/29_98_Validate_Binary_Search_Tree/29_98_Validate_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-26
 
 [LeetCode_700_33_Search in a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/28_700_Search_in_a_Binary_Search_Tree/28_700_Search_in_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-26
