@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_501_36_Find Mode in Binary Search Tree (Recursive Method) (Hashmap)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/31_501_Find_Mode_in_Binary_Search_Tree/31_501_Find_Mode_in_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-27
+
 [LeetCode_530_35_Minimum Absolute Difference in BST (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/30_530_Minimum_Absolute_Difference_in_BST/30_530_Minimum_Absolute_Difference_in_BST_Recursive_Method.cpp) - 2024-07-26
 
 [LeetCode_98_34_Validate Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/29_98_Validate_Binary_Search_Tree/29_98_Validate_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-26
@@ -20,10 +22,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_700_33_Search in a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/28_700_Search_in_a_Binary_Search_Tree/28_700_Search_in_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-26
 
 [LeetCode_617_32_Merge Two Binary Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/27_617_Merge_Two_Binary_Tree/27_617_Merge_Two_Binary_Tree_Recursive_Method.cpp) - 2024-07-25
-
-[LeetCode_654_31_Maximum Binary Tree (Recursive Method_01)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/26_654_Maximum_Binary_Tree/26_654_Maximum_Binary_Tree_Recursive_Method_01.cpp) - 2024-07-25
-
-[LeetCode_106_30_Construct Binary Tree from Inorder Postorder Traversal (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/25_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/25_106_Construct_Binary_Tree_from_Inorder_Postorder_Traversal_Recursive_Method.cpp) - 2024-07-25
 
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)
 </td>
