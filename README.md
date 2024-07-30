@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_501_37_Find Mode in Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/31_501_Find_Mode_in_Binary_Search_Tree/31_501_Find_Mode_in_Binary_Search_Tree_Recursive_Method_02.cpp) - 2024-07-29
+
 [LeetCode_501_36_Find Mode in Binary Search Tree (Recursive Method) (Hashmap)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/31_501_Find_Mode_in_Binary_Search_Tree/31_501_Find_Mode_in_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-27
 
 [LeetCode_530_35_Minimum Absolute Difference in BST (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/30_530_Minimum_Absolute_Difference_in_BST/30_530_Minimum_Absolute_Difference_in_BST_Recursive_Method.cpp) - 2024-07-26
