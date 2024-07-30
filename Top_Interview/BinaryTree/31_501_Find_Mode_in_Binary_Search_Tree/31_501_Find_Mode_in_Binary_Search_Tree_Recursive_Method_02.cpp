@@ -1,7 +1,5 @@
 #include <iostream>
-#include <unordered_map>
 using namespace std;
-
 
 /*
     [Question]
@@ -36,6 +34,7 @@ using namespace std;
             - 請看 01 檔案
         - Recursive Method (只使用 Recursive Method)
             - 題目明確說二叉搜索樹，因此可以使用二叉搜索樹的特性！
+            - 二叉搜索樹必定用 L、M、R (中序)
             - 請看 02 檔案
         - Iterative Method
 
@@ -68,69 +67,63 @@ struct TreeNode {
 
 class Solution {
 public:
-    //  利用 unordered_map 來儲存 
-    // map 中的 key:    儲存 node value
-    // map 中的 value:  儲存出現次數
-    unordered_map<int, int> countMap;
+    // 利用 pre 指針來比較 cur 指針
+    TreeNode* pre = NULL;
 
-    void traversal(TreeNode* node) {
-        if(node == NULL) return;
+    // 利用 count 統計頻率
+    int count = 0;
+
+    // 利用 maxCount 找出最大頻率
+    int maxCount = 0;
+
+    // 利用 vector 存取 results (因為頻率最大的不一定只有一個)
+    vector<int> results;
+
+    void traversal(TreeNode* cur) {
+        
+        if(cur == NULL) return;
+        
         // L
-        traversal(node->left);
-        // M
-        countMap[node->val]++;
-        // R
-        traversal(node->right);
-    }
-    vector<int> findMode(TreeNode* root) {
-        
-        vector<int> result;
-        
-        if(root == NULL) return result;
-        
-        traversal(root);
-        int maxCount = 0;
+        traversal(cur->left);
 
-        // 使用 for-loop 遍歷所有的 map value，找尋次數最多的！
-        // const auto&
-            // const    代表不會修改這個值
-            // auto     代表會根據實際類型自動轉換
-            // &        使用引用方式，避免複製元素，提高效能
-        for(const auto& pair: countMap) {
-            if(pair.second > maxCount) {
-                // 更新: 先將元素出現次數存放到 maxCount
-                maxCount = pair.second;
-                // 更新: result 陣列
-                    // 更新前，要先清空，因為最多次數的出現了！！
-                result.clear();
-                result.push_back(pair.first);
-                // 之所以會有 else if，就是因為次數最多的不一定只有一個
-            }else if(pair.second == maxCount) {
-                result.push_back(pair.first);
-            }
+        // M (中間處理)
+        // pre node 先給予計算 count == 1。全部葉子節點，都先設定為 1。
+        if(pre == NULL) {
+            count = 1;
+        // 如果 前一個節點，與下一個節點值相同，則 count++
+        }else if(pre->val == cur-> val) {
+            count++;
+        // 如果 前一個節點，與下一個節點值不同，則設定為 1    
+        }else{
+            count = 1;
         }
-        return result;
+        
+        // 每一次遞歸都要讓 pre 指針往前移一個 node
+        pre = cur;
+
+        // [重點_01] 如果 遞歸發現 count 的值 == maxCount 的值，則可以將 node 的值，放到 results
+            // 這也說明，為什麼頻率最大的，不一定只有一個
+            // [注意]：也因為這一步，下一步要寫出，當 count 值 > maxCount 值，代表有更高的頻率出現。
+        if (count == maxCount) results.push_back(cur->val);
+
+        // [重點_02]
+        if(count > maxCount) {
+            
+        // 因為出現頻率更高的值:
+            // 更新 maxCount
+            maxCount = count;
+            // 所以清空 results
+            results.clear();
+            // 將值放入results
+            results.push_back(cur->val);
+        }
+        // R
+        traversal(cur->right);
+
+    }
+
+    vector<int> findMode(TreeNode* root) {
+        traversal(root);
+        return results;
     }
 };
-
-int main() {
-    
-    // TreeNode* root = new TreeNode(0);
-    TreeNode* root = new TreeNode(1);
-    root->right = new TreeNode(2);
-    root->right->left = new TreeNode(3);
-
-    Solution solution;
-
-    vector<int> result = solution.findMode(root);
-
-    for(int i: result) {
-        cout << i << " ";
-    }
-    cout << endl;
-    return 0;
-}
-
-
-
-
