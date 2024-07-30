@@ -1,4 +1,6 @@
 # Binary Tree Problem
+[LeetCode_701_40_Lowest Common Ancestor of a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/34_701_Insert_Into_a_Binary_Search_Tree/34_701_Insert_Into_a_Binary_Search_Recursive_Method.cpp) - 2024-07-30
+
 [LeetCode_235_39_Lowest Common Ancestor of a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/33_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/33_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-30
 
 [LeetCode_236_38_Lowest Common Ancestor of a Binary Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/32_236_Lowest_Common_Ancestor_of_a_Binary_Tree/32_236_Lowest_Common_Ancestor_of_a_Binary_Tree_Recursive_Method.cpp) - 2024-07-29
