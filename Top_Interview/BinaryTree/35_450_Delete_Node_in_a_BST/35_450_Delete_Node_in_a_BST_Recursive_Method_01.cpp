@@ -35,8 +35,8 @@ using namespace std;
     [Thought]
     
     1.  做法可以分： 
-        -   Recursive Method(不使用 BST 特性) -->     檔案 01 (較為直觀)
-        -   Recursive Method                -->     檔案 02
+        -   Recursive Method(不使用 BST 特性) -->     檔案 01 (較為直觀！！推薦！！)
+        -   Recursive Method                -->     檔案 02 (較不直觀、難思考)
         -   Iterative Method                -->     檔案 03
 
 */
@@ -112,7 +112,8 @@ public:
                 return root;
             }
         }
-        // L
+        // 利用 BST 特性，進行遞歸
+        // L 
         if(root->val > key) root->left = deleteNode(root->left, key);
         // R
         if(root->val < key) root->right = deleteNode(root->right, key);
