@@ -13,6 +13,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Binary Tree Problem
 <!-- Binary Tree Problem List -->
+[LeetCode_669_42_Trim a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/36_669_Trim_a_Binary_Search_Tree/36_669_Trim_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-30
+
 [LeetCode_450_41_Delete Node in a BST (Recursive Method_BST_01)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/35_450_Delete_Node_in_a_BST/35_450_Delete_Node_in_a_BST_Recursive_Method_01.cpp) - 2024-07-30
 
 [LeetCode_701_40_Lowest Common Ancestor of a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/34_701_Insert_Into_a_Binary_Search_Tree/34_701_Insert_Into_a_Binary_Search_Recursive_Method.cpp) - 2024-07-30
@@ -20,8 +22,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_235_39_Lowest Common Ancestor of a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/33_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/33_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-30
 
 [LeetCode_236_38_Lowest Common Ancestor of a Binary Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/32_236_Lowest_Common_Ancestor_of_a_Binary_Tree/32_236_Lowest_Common_Ancestor_of_a_Binary_Tree_Recursive_Method.cpp) - 2024-07-29
-
-[LeetCode_501_37_Find Mode in Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/31_501_Find_Mode_in_Binary_Search_Tree/31_501_Find_Mode_in_Binary_Search_Tree_Recursive_Method_02.cpp) - 2024-07-29
 
 
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)

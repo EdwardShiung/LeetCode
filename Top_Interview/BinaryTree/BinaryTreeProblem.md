@@ -1,4 +1,6 @@
 # Binary Tree Problem
+[LeetCode_669_42_Trim a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/36_669_Trim_a_Binary_Search_Tree/36_669_Trim_a_Binary_Search_Tree_Recursive_Method.cpp) - 2024-07-30
+
 [LeetCode_450_41_Delete Node in a BST (Recursive Method_BST_01)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/35_450_Delete_Node_in_a_BST/35_450_Delete_Node_in_a_BST_Recursive_Method_01.cpp) - 2024-07-30
 
 [LeetCode_701_40_Lowest Common Ancestor of a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/34_701_Insert_Into_a_Binary_Search_Tree/34_701_Insert_Into_a_Binary_Search_Recursive_Method.cpp) - 2024-07-30
