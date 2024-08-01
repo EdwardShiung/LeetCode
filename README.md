@@ -6,8 +6,21 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ## Topic Categories
 
+
+
+
 <table>
 <tr>
+
+<td valign="top" width="33%">
+
+### Backtracking
+<!-- Backtracking -->
+[LeetCode_77_01_Combination](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/01_77_Combinations/01_77_Combinatino_01.cpp) - 2024-07-31
+
+<!-- More on -->
+More [Backtracking Problem]()
+</td>
 
 <td valign="top" width="33%">
 
@@ -27,7 +40,7 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)
 </td>
 
-<td valign="top" width="33%">
+<td valign="top" width="34%">
 
 ### Stack & Queue Problem
 <!-- Stack & Queue Problem List -->
@@ -48,7 +61,15 @@ More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/To
 More [Stack & Queue Problem]()
 </td>
 
-<td valign="top" width="34%">
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+
+<td valign="top" width="33%">
 
 ### String Problem
 <!-- String Problem List -->
@@ -70,17 +91,7 @@ More [String Problem]()
 </td>
 
 
-
-</tr>
-
-</table>
-
-
-<table>
-
-<tr>
-
-<td valign="top" width="34%">
+<td valign="top" width="33%">
 
 ### Hashmap Problem
 <!-- Hashmap Problem List -->
@@ -103,7 +114,7 @@ More [String Problem]()
 More [Hashmap Problem]()
 </td>
 
-<td valign="top" width="33%">
+<td valign="top" width="34%">
 
 ### Linked List Problem
 <!-- Linked List Problem List -->
@@ -124,6 +135,13 @@ More [Hashmap Problem]()
 More [Linked List Problem]()
 </td>
 
+</tr>
+
+</table>
+
+
+<table>
+<tr>
 <td valign="top" width="33%">
 
 ### Array Problem
@@ -153,6 +171,20 @@ More [Linked List Problem]()
 More [Array Problem]()
 </td>
 
-</tr>
+<td valign="top" width="33%">
 
+### Pending
+[Pending]() - 
+
+</td>
+
+<td valign="top" width="34%">
+
+### Pending
+[Pending]() - 
+
+</td>
+
+
+</tr>
 </table>
