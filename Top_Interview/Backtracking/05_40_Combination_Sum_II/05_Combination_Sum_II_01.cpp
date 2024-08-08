@@ -70,7 +70,6 @@ public:
             path.pop_back();
         }
 
-
     }
 
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
@@ -80,3 +79,18 @@ public:
         return results;
     }
 };
+
+
+int main() {
+    
+    vector<int> candidates = {10,1,2,7,6,1,5};
+
+    int target = 8;
+
+    Solution solution;
+
+    
+
+
+    return 0;
+}
