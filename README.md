@@ -16,6 +16,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Backtracking
 <!-- Backtracking -->
+[LeetCode_131_Palindrome Partitioning](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/06_131_Palindrome_Partitioning/06_131_Palindrome_Partitioning_01.cpp) - 2024-08-07
+
 [LeetCode_40_06_Combination Sum II](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/05_40_Combination_Sum_II/05_Combination_Sum_II_01.cpp) - 2024-08-06
 
 [LeetCode_39_05_Combinations Sum](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/04_39_Combination_Sum/04_39_Combinations_Sum.cpp) - 2024-08-06
