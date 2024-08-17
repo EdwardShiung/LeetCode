@@ -36,6 +36,9 @@ using namespace std;
     [Review]:
     1. 本題可以多思考！！
         - 尤其邊界和索引關係
+
+    [Similar Question]
+    1. LeetCode 93
 */
 
 
