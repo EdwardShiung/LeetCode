@@ -71,22 +71,6 @@ public:
             // 判斷是否回文
             if(isPalindrome(s, startIndex, i)) {
                 // 獲取 [startIndex, i] 在 s 中的字串
-
-    /*
-
-        Q: 為什麼是 i - startIndex + 1 而不是 i - startIndex？
-        
-        ANS:
-
-        假設字串 s 為 "abcde"，startIndex = 1，i = 3，
-        這意味著你想要從字串 s 中提取從 startIndex = 1 到 i = 3 這個區間的子字串。具體的步驟如下：
-
-        s[startIndex] 是 "b"（對應於 s[1]）
-        s[i] 是 "d"（對應於 s[3]）
-        在這種情況下，s.substr(1, 3 - 1 + 1) 等價於 s.substr(1, 3)，結果會是 "bcd"。
-        而 s.substr(1, 3 - 1) 等價於 s.substr(1, 2)，結果會是 "bc"，這並不是你想要的子字串。
-
-    */
                 string str = s.substr(startIndex, i - startIndex + 1);
                 path.push_back(str);
             } else {
