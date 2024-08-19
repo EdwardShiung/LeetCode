@@ -35,6 +35,9 @@ using namespace std;
     3. 本題共有三種解法
         - 方法一： 利用 used 追蹤 “樹層重複” 和 “樹枝重複”  --> 檔案 01
         - 方法二： 利用 set                             --> 檔案 02
+            - 須了解如何使用 unordered_set 的方法
+                - find
+                - end
         - 方法三： 同方法一，但不使用 used                --> 檔案 03
     
 */
