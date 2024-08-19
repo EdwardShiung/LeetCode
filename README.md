@@ -16,6 +16,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Backtracking
 <!-- Backtracking -->
+[LeetCode_491_13_Non decreasing Subsequences (Method_01: unordered_set)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/10_491_Non_decreasing_Subsequences/10_491_Non_decreasing_Subsequences_01.cpp) - 2024-08-19
+
 [LeetCode_90_12_Subsets II (Method_03 no used method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_03.cpp) - 2024-08-18
 
 [LeetCode_90_11_Subsets II (Method_02 set method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_02.cpp) - 2024-08-18
@@ -33,8 +35,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_39_05_Combinations Sum](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/04_39_Combination_Sum/04_39_Combinations_Sum.cpp) - 2024-08-06
 
 [LeetCode_17_04_Letter Combination of a Phone Number](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/03_17_Letter_Combinations_of_a_Phone_Number/03_17_Letter_Combinations_of_a_Phone_Number_01.cpp) - 2024-07-31
-
-[LeetCode_216_03_Combination Sum III (Backtracking 02)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/02_216_Combination_Sum_III/02_216_Combinatino_Sum_III_02.cpp) - 2024-07-31
 
 <!-- More on -->
 More [Backtracking Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/BacktrackingProblem.md)

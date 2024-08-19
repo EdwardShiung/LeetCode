@@ -1,4 +1,6 @@
 # Backtracking Problem
+[LeetCode_491_13_Non decreasing Subsequences (Method_01: unordered_set)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/10_491_Non_decreasing_Subsequences/10_491_Non_decreasing_Subsequences_01.cpp) - 2024-08-19
+
 [LeetCode_90_12_Subsets II (Method_03 no used method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_03.cpp) - 2024-08-18
 
 [LeetCode_90_11_Subsets II (Method_02 set method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_02.cpp) - 2024-08-18
