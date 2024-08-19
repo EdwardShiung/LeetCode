@@ -1,6 +1,5 @@
 #include <iostream>
-#include <vector>
-// #include <boolean>
+#include <unordered_set>
 using namespace std;
 
 /*
@@ -39,42 +38,38 @@ using namespace std;
         - 方法三： 同方法一，但不使用 used                --> 檔案 03
     
 */
-
 class Solution {
 public:
-   // Create a path
-   vector<int> path;
-   // Create a results
-   vector<vector<int>> results;
+    // Create a path
+    vector<int> path;
+    // Create a results
+    vector<vector<int>> results; 
 
-   void backtracking(vector<int>& nums, int startIndex, vector<bool>& used) {
-    // 子集包含空集合
-    results.push_back(path);
-    // 終止條件：（因為不是只搜集葉子節點，因此這部分可省略）
-    if(startIndex == nums.size()) {
-        return;
+    void backtracking(vector<int> nums, int startIndex) {
+        // 子集包含空集合
+        results.push_back(path);
+        // 終止條件：（因為不是只搜集葉子節點，因此這部分可省略）
+        if(startIndex == nums.size()) return;
+        // 單層邏輯：
+        // 使用 unordered_set 
+        unordered_set<int> uset;
+        for(int i = startIndex; i < nums.size(); i++) {
+            // 利用 find 和 end 方法： 
+            if(uset.find(nums[i]) != uset.end()) continue;
+            uset.insert(nums[i]);
+            path.push_back(nums[i]);
+            backtracking(nums, i + 1);
+            path.pop_back();
+        }   
     }
-    // 單層邏輯：
-    for(int i = startIndex; i < nums.size(); i++) {
-        // 這邊同一層邏輯中，不能有重複的
-        // used == false && i > 0 && nums[i] == nums[i - 1] --> 樹層重複
-        // used == true && i > 0 && nums[i] == nums[i - 1] --> 樹枝重複
-        if(i > 0 && nums[i] == nums[i - 1] && used[i - 1] == false) continue;
-        path.push_back(nums[i]);
-        used[i] = true;
-        backtracking(nums, i + 1, used);
-        used[i] = false;
-        path.pop_back();
-    }
-   }
-   
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        vector<bool> used(nums.size(), false);
+
+    vector<vector<int>> subsetsWithDup(vector<int> nums) {
         sort(nums.begin(), nums.end());
-        backtracking(nums, 0, used);
+        backtracking(nums, 0);
         return results;
     }
 };
+
 
 int main() {
     
