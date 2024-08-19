@@ -16,6 +16,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Backtracking
 <!-- Backtracking -->
+[LeetCode_491_14_Non decreasing Subsequences (Method_02: Array)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/10_491_Non_decreasing_Subsequences/10_491_Non_decreasing_Subsequences_02.cpp) - 2024-08-19
+
 [LeetCode_491_13_Non decreasing Subsequences (Method_01: unordered_set)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/10_491_Non_decreasing_Subsequences/10_491_Non_decreasing_Subsequences_01.cpp) - 2024-08-19
 
 [LeetCode_90_12_Subsets II (Method_03 no used method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_03.cpp) - 2024-08-18
