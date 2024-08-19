@@ -51,6 +51,8 @@ public:
     // 單層邏輯：
     for(int i = startIndex; i < nums.size(); i++) {
         // 這邊同一層邏輯中，不能有重複的
+        // used == false && i > 0 && nums[i] == nums[i - 1] --> 樹層重複
+        // used == true && i > 0 && nums[i] == nums[i - 1] --> 樹枝重複
         if(i > 0 && nums[i] == nums[i - 1] && used[i - 1] == false) continue;
         path.push_back(nums[i]);
         used[i] = true;
