@@ -31,6 +31,17 @@ using namespace std;
 */
 
 class Solution {
+private:
+    // Create a path
+    vector<int> path;
+    // Create a results
+    vector<vector<int>> results;
+
+    void backtracking(vector<int>& nums, int startIndex) {
+        
+    }
+
+
 public:
     vector<vector<int>> permute(vector<int>& nums) {
 
