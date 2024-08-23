@@ -33,6 +33,10 @@ using namespace std;
     [Thought]:
     1. 要了解組合、切割、排列的不同
 
+    [Similar Question]:
+    1. LeetCode 46  Permutations
+    2. LeetCode 47 Permutations II
+
 */
 
 class Solution {
