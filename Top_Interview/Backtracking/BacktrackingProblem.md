@@ -1,4 +1,6 @@
 # Backtracking Problem
+[LeetCode_332_17_Reconstruct_Itinerary](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/13_332_Reconstruct_Itinerary/13_332_Reconstruct_Itinerary.cpp) - 2024-08-23
+
 [LeetCode_47_16_Permutations II](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/12_47_Permutations_II/12_47_Permutations_II.cpp) - 2024-08-22
 
 [LeetCode_46_15_Permutations](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/11_46_Permutations/11_46_Permutations_01.cpp) - 2024-08-22

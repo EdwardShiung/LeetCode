@@ -16,6 +16,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Backtracking
 <!-- Backtracking -->
+[LeetCode_332_17_Reconstruct_Itinerary](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/13_332_Reconstruct_Itinerary/13_332_Reconstruct_Itinerary.cpp) - 2024-08-23
+
 [LeetCode_47_16_Permutations II](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/12_47_Permutations_II/12_47_Permutations_II.cpp) - 2024-08-22
 
 [LeetCode_46_15_Permutations](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/11_46_Permutations/11_46_Permutations_01.cpp) - 2024-08-22
@@ -31,10 +33,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_90_10_Subsets II (Method_01 used Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_01.cpp) - 2024-08-18
 
 [LeetCode_78_09_Subsets](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/08_78_Subsets/08_78_Subsets.cpp) - 2024-08-18
-
-[LeetCode_93_08_Restore_IP_Addresses](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/07_93_Restore_IP_Addresses/07_93_Restore_IP_Addresses_01.cpp) - 2024-08-16
-
-[LeetCode_131_07_Palindrome Partitioning](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/06_131_Palindrome_Partitioning/06_131_Palindrome_Partitioning_01.cpp) - 2024-08-07
 
 <!-- More on -->
 More [Backtracking Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/BacktrackingProblem.md)
