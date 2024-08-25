@@ -16,6 +16,8 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 ### Backtracking
 <!-- Backtracking -->
+[LeetCode_51_18_N_Queens_01](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/14_51_N_Queens/14_51_N_Queens_01.cpp) - 2024-08-24
+
 [LeetCode_332_17_Reconstruct_Itinerary](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/13_332_Reconstruct_Itinerary/13_332_Reconstruct_Itinerary.cpp) - 2024-08-23
 
 [LeetCode_47_16_Permutations II](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/12_47_Permutations_II/12_47_Permutations_II.cpp) - 2024-08-22
@@ -29,10 +31,6 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 [LeetCode_90_12_Subsets II (Method_03 no used method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_03.cpp) - 2024-08-18
 
 [LeetCode_90_11_Subsets II (Method_02 set method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_02.cpp) - 2024-08-18
-
-[LeetCode_90_10_Subsets II (Method_01 used Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/09_90_Subsets_II/09_90_Subsets_II_01.cpp) - 2024-08-18
-
-[LeetCode_78_09_Subsets](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/08_78_Subsets/08_78_Subsets.cpp) - 2024-08-18
 
 <!-- More on -->
 More [Backtracking Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/BacktrackingProblem.md)
