@@ -11,7 +11,24 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 <td valign="top" width="33%">
 
-### Backtracking
+### Dynamic Programming Problem
+
+More [Dynamic Problem]()
+
+</td>
+
+<td valign="top" width="33%">
+
+### Greedy Problem
+[LeetCode_01_455_Assign Cookies](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/01_455_Assign_Cookies/01_455_Assign_Cookies.cpp) - 2024-08-27
+
+More [Greedy Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/Greedy.md)
+
+</td>
+
+<td valign="top" width="34%">
+
+### Backtracking Problem
 <!-- Backtracking -->
 [LeetCode_37_19_Sudoku Solver](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/15_37_Sudoku_Solver/15_37_Sudoku_Solver_01.cpp) - 2024-08-26
 
@@ -29,7 +46,17 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 
 <!-- More on -->
 More [Backtracking Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Backtracking/BacktrackingProblem.md)
+
+
 </td>
+
+</tr>
+
+</table>
+
+<table>
+
+<tr>
 
 <td valign="top" width="33%">
 
@@ -47,9 +74,11 @@ More [Backtracking Problem](https://github.com/EdwardShiung/LeetCode/blob/main/T
 
 
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)
+
 </td>
 
-<td valign="top" width="34%">
+
+<td valign="top" width="33%">
 
 ### Stack & Queue Problem
 <!-- Stack & Queue Problem List -->
@@ -68,17 +97,10 @@ More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/To
 [LeetCode_232_01_Implement Queue using Stack](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StackQueue/01_232_Implement_Queue_using_Stack/01_232_Implement_Queue_using_Stack.cpp) - 2024-07-05
 <!-- More on -->
 More [Stack & Queue Problem]()
+
 </td>
 
-</tr>
-
-</table>
-
-<table>
-
-<tr>
-
-<td valign="top" width="33%">
+<td valign="top" width="34%">
 
 ### String Problem
 <!-- String Problem List -->
@@ -97,9 +119,16 @@ More [Stack & Queue Problem]()
 [LeetCode_344_01 Reverse String](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/StringQuestion/01_344_Reverse_String/01_344_Reverse_String.cpp) - 2024-06-26
 <!-- More on -->
 More [String Problem]()
+
 </td>
 
+</tr>
 
+</table>
+
+
+<table>
+<tr>
 <td valign="top" width="33%">
 
 ### Hashmap Problem
@@ -121,9 +150,10 @@ More [String Problem]()
 [LeetCode_349_01_Valid Anagram](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Hashmap/01_242_Valid_Anagram/01_242_Valid_Anagram.cpp) - 2024-06-14
 <!-- More on -->
 More [Hashmap Problem]()
+
 </td>
 
-<td valign="top" width="34%">
+<td valign="top" width="33%">
 
 ### Linked List Problem
 <!-- Linked List Problem List -->
@@ -142,16 +172,10 @@ More [Hashmap Problem]()
 [LeetCode_203_01_Remove Linked List Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/LinkedList/01_203_Remove_linked_list_Elements/01_203_Remove_Linked_List_Elements.cpp) - 2024-06-05
 <!-- More on -->
 More [Linked List Problem]()
+
 </td>
 
-</tr>
-
-</table>
-
-
-<table>
-<tr>
-<td valign="top" width="33%">
+<td valign="top" width="34%">
 
 ### Array Problem
 <!-- Array Problem List -->
@@ -178,20 +202,6 @@ More [Linked List Problem]()
 [LeetCode_169_05_Majority Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Array/05_169_Majority_Element/05_169_Majority_Element.c) - 2024-05-21
 <!-- More on -->
 More [Array Problem]()
-</td>
-
-<td valign="top" width="33%">
-
-### Pending
-[Pending]() - 
-
-</td>
-
-<td valign="top" width="34%">
-
-### Pending
-[Pending]() - 
-
 </td>
 
 
