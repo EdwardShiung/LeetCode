@@ -35,7 +35,9 @@ using namespace std;
     1. 暴力解 -- file 01
         -- Time Limit Exceeded
     2. Greedy Method -- file 02
-        -- 只取正的元素
+        - 不能讓”連續和“為負數的時候，加上下一個元素
+        - 但是，如果連續和為正數，即使下一個為負數，依舊可以加上去！
+            -- 只取正的元素
     3. DP Method -- file 03
 */
 
@@ -57,7 +59,7 @@ public:
 
 
 int main() {
-    vector<int> nums = {-2,1,-3,4,-1,2,1,-5,4};
+    vector<int> nums = {-2,1,-3,4,3,-2,1,-5,4};
 
     Solution solution;
 
