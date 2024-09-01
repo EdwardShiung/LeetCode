@@ -34,7 +34,7 @@ using namespace std;
     [Thought]
     1. 本題與 55 題最大差異，在於： 
         - LeetCode 只要找到一組，可以跳到終點的，就立刻返回
-            - LeetCode 本題要找，步數最少的組合
+            - LeetCode 本題要找，步數最少的組合 
 
 */
 
