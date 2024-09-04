@@ -1,4 +1,6 @@
-# Backtracking Problem
+# Greedy Problem
+[LeetCode_1005_08_Maximize Sum of Array After K Negations](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/07_1005_Maximize_Sum_Of_Array_After_K_Negations/07_1005_Maximize_Sum_Of_Array_After_K_Negations_01.cpp) - 2024-09-03
+
 [LeetCode_45_07_Jump Game II](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/06_45_Jump_Game_II/06_45_Jump_Game_II_01.cpp) - 2024-08-30
 
 [LeetCode_55_06_Jump Game](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/05_55_Jump_Game/05_55_Jump_Game_01.cpp) - 2024-08-29
