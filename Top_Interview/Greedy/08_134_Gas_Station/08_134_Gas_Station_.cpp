@@ -43,10 +43,45 @@ n == gas.length == cost.length
 0 <= gas[i], cost[i] <= 104
 
 
+[Thought]
+    1. There are two solutions. 
+        - The first one is kind of brutal force solution.
+            - Reference 01
+                - The time complexity is too high O(n^2)
+        - The second one is optimized solution.
+            - Reference 02
+[Skill]
+    1. modulus operations with array index
+    2. understanding the different between for loop and while loop
+        // for loop: from the begin to the end --> it's kind of line loop
+        // while loop: circular loop 
+
+
 */
 
 class Solution {
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        
+        for(int i = 0; i < gas.size(); i++) {
+            // Record the rest of oil
+            int rest = gas[i] - cost[i];
+            // From i index, we need to know whether the gas is enough to the rest of road.
+            int index = (i + 1) % gas.size();
+            // Start to run the rest of distance
+                // First Limitation: Rest should greater zero.
+                    // if rest smaller than zero, we don't have enough gas to run the rest of road.
+                // Second Limitation: index != i.
+                    // if index == i, the loop should stop.
+            while(rest > 0 && index != i) {
+                rest += gas[index] - cost[index];
+                index = (index + 1) % gas.size();
+            }
+            // Here is very important.
+            // There are two requirements that could work and return i.
+                // Rest should greater than zero.
+                // index should equal i. The reason is that we need to make sure we can run the whole index, not only one at i index.
+            if(rest >=0 && index == i) return i;
+        }
+        return -1;
     }
 };
+
