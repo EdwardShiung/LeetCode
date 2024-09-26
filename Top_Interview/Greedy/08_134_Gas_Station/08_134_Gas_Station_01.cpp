@@ -50,6 +50,8 @@ n == gas.length == cost.length
                 - The time complexity is too high O(n^2)
         - The second one is optimized solution.
             - Reference 02
+        - Using "Greedy"
+            - Reference 03
 [Skill]
     1. modulus operations with array index
     2. understanding the different between for loop and while loop
@@ -61,27 +63,37 @@ n == gas.length == cost.length
 
 class Solution {
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+        // record the total oil usage
+        int total = 0;
+        // record the minium value
+        int min = INT_MAX;
+        // Determine the total oil usage
+            // During calculation, we can
         for(int i = 0; i < gas.size(); i++) {
-            // Record the rest of oil
-            int rest = gas[i] - cost[i];
-            // From i index, we need to know whether the gas is enough to the rest of road.
-            int index = (i + 1) % gas.size();
-            // Start to run the rest of distance
-                // First Limitation: Rest should greater zero.
-                    // if rest smaller than zero, we don't have enough gas to run the rest of road.
-                // Second Limitation: index != i.
-                    // if index == i, the loop should stop.
-            while(rest > 0 && index != i) {
-                rest += gas[index] - cost[index];
-                index = (index + 1) % gas.size();
-            }
-            // Here is very important.
-            // There are two requirements that could work and return i.
-                // Rest should greater than zero.
-                // index should equal i. The reason is that we need to make sure we can run the whole index, not only one at i index.
-            if(rest >=0 && index == i) return i;
+            // Calculate the usage
+            total += gas[i] - cost[i];
+            // Record the minimum
+            if(total < min) min = total;
         }
-        return -1;
+
+        // Case 1: if total smaller than zero, it means that it could not get any result. 
+            // Return -1
+            if(total < 0) return -1;
+
+        // Case 2: if total greater than or equal to zero, it means that the result at index 0;
+            if(min >= 0) return 0;
+
+        //Case 3: if total == 0  but min !=0, we need to find out which index could be the starting point.
+            // Using for loop from the ending point to the beginning point.
+            // If the accumulated value could equal to the min, it means that the starting point is in that index.
+            for(int i = gas.size() - 1; i >=0; i-- ) {
+                min += gas[i] - cost[i];
+                if(min >= 0){
+                    return i;
+                }
+            }
+        // Just in case the program get error, so we give the program return a -1
+        return -1;            
     }
 };
 
