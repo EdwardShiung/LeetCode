@@ -20,6 +20,8 @@ More [Dynamic Problem]()
 <td valign="top" width="33%">
 
 ### Greedy Problem
+[LeetCode_134_10_Gas Station_02](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/08_134_Gas_Station/08_134_Gas_Station_02.cpp) - 2024-09-25
+
 [LeetCode_134_09_Gas Station_01](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/08_134_Gas_Station/08_134_Gas_Station_01.cpp) - 2024-09-25
 
 [LeetCode_1005_08_Maximize Sum of Array After K Negations](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/07_1005_Maximize_Sum_Of_Array_After_K_Negations/07_1005_Maximize_Sum_Of_Array_After_K_Negations_01.cpp) - 2024-09-03
@@ -34,9 +36,6 @@ More [Dynamic Problem]()
 
 [LeetCode_376_03_Maximum_Subarray](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/03_53_Maximum_Subarray/03_53_Maximum_Subarray_01.cpp) - 2024-08-28
 
-[LeetCode_376_02_Wiggle Subsequence](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/02_376_Wiggle_Subsequence/02_376_Wiggle_Subsequence.cpp) - 2024-08-28
-
-[LeetCode_455_01_Assign Cookies](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/01_455_Assign_Cookies/01_455_Assign_Cookies.cpp) - 2024-08-27
 
 More [Greedy Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/Greedy.md)
 
