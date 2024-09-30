@@ -47,6 +47,7 @@ n == ratings.length
 class Solution {
 public:
     int candy(vector<int>& ratings) {
+
         // Step 01: Give one for each student.
         vector<int> candyAssign(ratings.size(), 1);
 
@@ -55,7 +56,7 @@ public:
             if(ratings[i] > ratings[i - 1]) candyAssign[i] += 1;
         }
 
-        // Step 03: From the end to the begin (right -> left Loop), if left is bigger, add one more. 
+        // Step 03: From the end to the begin (right -> left Loop), if left is bigger, add one more.
         for(int i  = ratings.size() - 1; i > 0; i--) {
             if(ratings[i - 1] < ratings[i]) candyAssign[i] += 1;
         }
