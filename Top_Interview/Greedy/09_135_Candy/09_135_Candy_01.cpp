@@ -53,12 +53,13 @@ public:
 
         // Step 02: From the begin to the end (Left -> Right Loop), if right is bigger, add one more.
         for(int i  = 1; i < ratings.size(); i++) {
-            if(ratings[i] > ratings[i - 1]) candyAssign[i] += 1;
+            if(ratings[i] > ratings[i - 1]) candyAssign[i] = candyAssign[i - 1] + 1;
         }
 
         // Step 03: From the end to the begin (right -> left Loop), if left is bigger, add one more.
+        // left is "i - 1" not "i"
         for(int i  = ratings.size() - 1; i > 0; i--) {
-            if(ratings[i - 1] < ratings[i]) candyAssign[i] += 1;
+            if(ratings[i - 1] > ratings[i]) candyAssign[i - 1] = max (candyAssign[i - 1], candyAssign[i] + 1);
         }
 
         // Step 04: total
