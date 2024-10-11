@@ -39,15 +39,34 @@ Constraints:
 0 <= ki < people.length
 It is guaranteed that the queue can be reconstructed.
 
+[Thought]:
+
+    1. Doing Greedy, one thing is very important. If there are at least two parameter, such as height(h) and people(k), 
+    the best solution is to fix one parameter and move another.
+
+    2. We can try to move people(k) first, and you find out that could be far away from the answer.
+
+    3. However, if we move the height(h) parameter, you will find out when you fix the height parameter,
+    it will be easy to adjust the k parameter, which could insert to the index by k.
+
 */
 
 class Solution {
 public:
-    vector<vector<int>> reconstructionQueue(vector<vector<int>>& people) {
 
+    static bool compared(const vector<int>& a, const vector<int>& b) {
+        if(a[0] == b[0]) return a[1] < b[1];
+        return a[0] > b[0];
+    }
+
+    vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
+        sort(people.begin(), people.end(), compared);
+        vector<vector<int>> queue;
+        for(int i = 0; i < people.size(); i++) {
+            int position = people[i][1];
+            queue.insert(queue.begin() + position, people[i]);
+        }
+        return queue;
     }
 };
 
-int main(){
-    
-}
