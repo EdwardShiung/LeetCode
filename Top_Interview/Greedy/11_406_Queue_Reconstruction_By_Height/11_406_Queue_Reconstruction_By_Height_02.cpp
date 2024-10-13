@@ -1,4 +1,5 @@
 #include <iostream>
+#include <list>
 using namespace std;
 
 /*
@@ -60,20 +61,32 @@ It is guaranteed that the queue can be reconstructed.
 
 class Solution {
 public:
-
+    // Height (from Tall to Short) -- If tall is the same, I  will compare the "k".
+    // When I compared the "k", pick the small one in the front and large one in the latter.
     static bool compared(const vector<int>& a, const vector<int>& b) {
         if(a[0] == b[0]) return a[1] < b[1];
         return a[0] > b[0];
     }
 
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
+        // Step 1: Sort the height from tall to short (if the tall is the same, I will compare the "k".)
         sort(people.begin(), people.end(), compared);
-        vector<vector<int>> queue;
+        // Using List not vector to optimize insertion time complexity 
+        // The underlying implementation of a list is a linked list, which makes insertion much more efficient than a vector.
+        list<vector<int>> queue;
+        // Using for-loop to rank the array
         for(int i = 0; i < people.size(); i++) {
+            // Get the K information.(We need to use that to insert the data by index.)
             int position = people[i][1];
-            queue.insert(queue.begin() + position, people[i]);
+            // Using the it to get the index
+            std::list<vector<int>>:: iterator it = queue.begin();
+            while(position--) {
+                it++;
+            }
+            queue.insert(it, people[i]);
         }
-        return queue;
+        return vector<vector<int>>(queue.begin(), queue.end());
     }
 };
+
 
