@@ -49,6 +49,8 @@ It is guaranteed that the queue can be reconstructed.
     3. However, if we move the height(h) parameter, you will find out when you fix the height parameter,
     it will be easy to adjust the k parameter, which could insert to the index by k.
 
+    4. Vector is not a good container. So, it could be optimize by other container, such as linked list.
+    
 */
 
 class Solution {
