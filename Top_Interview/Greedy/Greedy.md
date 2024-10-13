@@ -1,4 +1,6 @@
 # Greedy Problem
+[LeetCode_406_15_Queue Reconstruction By Height](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/11_406_Queue_Reconstruction_By_Height/11_406_Queue_Reconstruction_By_Height_02.cpp) - 2024-10-13
+
 [LeetCode_406_14_Queue Reconstruction By Height](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/11_406_Queue_Reconstruction_By_Height/11_406_Queue_Reconstruction_By_Height_01.cpp) - 2024-10-11
 
 [LeetCode_860_13_Lemonade Change](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/10_860_Lemonade_Change/10_860_Lemonade_Change_01.cpp) - 2024-10-09
