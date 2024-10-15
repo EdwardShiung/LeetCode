@@ -79,7 +79,35 @@ public:
             // Get the K information.(We need to use that to insert the data by index.)
             int position = people[i][1];
             // Using the it to get the index
+            // Initialize an iterator
             std::list<vector<int>>:: iterator it = queue.begin();
+            /*
+            std::list<vector<int>>::這種C++中模板類型的常規表示法。
+            這裡的意思是我們在使用一個特定的類型std::list，而這個list存儲的是vector<int>型別的元素。
+            來拆解一下這個表示法：
+
+            std::list<vector<int>>
+
+            std::list：C++標準庫中的雙向鏈表類型，是一個模板類（template class），可以存儲任意類型的元素。
+            vector<int>：這表示每個list中的元素是vector<int>，即一個存放整數的動態數組。
+            也就是說，list的每一個節點裡存放的是一個整數向量。
+            ::（範圍解析運算符）：
+            這個符號用來訪問類或命名空間中的成員。
+            在這裡，我們想定義或使用某個與list<vector<int>>相關的東西，比如迭代器，所以需要使用範圍解析運算符。
+
+            例子：
+            假設你需要聲明一個迭代器來遍歷std::list<vector<int>>中的元素，那麼就會這樣寫：
+
+            cpp
+            std::list<vector<int>>::iterator it;
+            這表示你聲明了一個迭代器it，它可以用來指向或操作std::list<vector<int>>中的元素。
+
+            這種寫法的結構：
+            模板類型（template class）：std::list和std::vector都是模板類型，這些模板類型可以接受其他類型作為參數。
+            例如，std::list<vector<int>>表示這個list的每個元素是一個vector<int>。
+            範圍解析符號（::）：用來訪問模板類型的成員，像迭代器（iterator）或其他成員函數。
+            所以這並不是「專門的」寫法，而是C++模板和範圍解析運算符的常見用法。
+            */
             while(position--) {
                 it++;
             }
