@@ -39,6 +39,36 @@ s consists of lowercase English letters.
 class Solution {
 public:
     vector<int> partitionLables(string s) {
-        
+        // Record the number of english character
+        // 0-25 stand for a-z
+        int hashtable[26] = {0};
+        // Using for-loop to detect the string s
+        for(int i = 0; i < s.size(); i++) {
+            hashtable[s[i] - 'a'] = i;
+        }
+        // After recording the english character, we can start to get the results;
+        vector<int> result;
+        // left
+        int left = 0;
+        // right
+        int right = 0;
+        // Using loop to separate the string s
+        for(int i = 0; i < s.size(); i++) {
+            // set the right flag
+            right = max(right, hashtable[s[i] - 'a']);
+            // if right flag == i, it means that it could separate the string s
+            if(i == right) {
+                result.push_back(right - left + 1);
+                left = i + 1;
+            }
+        }
+        return result;
     }
 };
+
+int main(){
+    char a = 'a';
+    char z = 'z';
+    printf("a: %d\n", a);
+    printf("z: %d\n", z);
+}
