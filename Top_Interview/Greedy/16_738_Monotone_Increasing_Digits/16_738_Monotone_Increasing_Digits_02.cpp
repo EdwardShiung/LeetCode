@@ -34,36 +34,32 @@ Constraints:
 */
 
 class Solution {
-private:
-    // The function for findInteger is 
-    bool checkNum(int num) {
-        int max = 10;
-        while(num) {
-            int eachNum = num % 10;
-            if(max >= eachNum) {
-                max = eachNum;
-            }else{
-                return false;
-            }
-            num = num / 10;
-        }
-        return true;
-    }
+
 
 public:
     int monotoneIncreasingDigits(int n) {
-        for(int i = n; i > 0; i--) {
-            if(checkNum(i)) {
-                printf("i: %d\n", i);
-                return i;
+        // Step_01: Covert number to string
+        string convertNS = to_string(n);
+        // printf("%s\n", convertNS.c_str());
+        // set a flag (We need a flag to understand which index should put number 9)
+        int flag = convertNS.size();
+        for(int i = convertNS.size() - 1; i > 0; i--) {
+            if(convertNS[i - 1]> convertNS[i]) {
+                flag = i;
+                convertNS[i - 1]--; 
             }
         }
-        // In the situation, you have to give a zero value.
-        return 0;    
+
+        // Using a loop to put number 9 after the flag index
+        for(int i = flag; i < convertNS.size(); i++) {
+            convertNS[i] = '9';
+        }
+        printf("%s\n", convertNS.c_str());
+        return stoi(convertNS);
     }
 };
 
 int main() {
     Solution solution;
-    solution.monotoneIncreasingDigits(104);
+    solution.monotoneIncreasingDigits(332);
 }
