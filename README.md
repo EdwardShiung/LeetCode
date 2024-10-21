@@ -20,6 +20,8 @@ More [Dynamic Problem]()
 <td valign="top" width="33%">
 
 ### Greedy Problem
+[LeetCode_738_18_Monotone Increasing Digits](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/16_738_Monotone_Increasing_Digits/16_738_Monotone_Increasing_Digits_01.cpp) - 2024-10-21
+
 [LeetCode_763_17_Partition Labels 01](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/14_763_Partition_Labels/14_763_Partition_Labels_01.cpp) - 2024-10-19
 
 [LeetCode_452_16_Minimum Number of Arrows to Burst](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/12_452_Minimum_Number_of_Arrows_to_Burst/12_452_Minimum_Number_of_Arrows_to_Burst_01.cpp) - 2024-10-14
@@ -31,12 +33,6 @@ More [Dynamic Problem]()
 [LeetCode_860_13_Lemonade Change](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/10_860_Lemonade_Change/10_860_Lemonade_Change_01.cpp) - 2024-10-09
 
 [LeetCode_135_12_Candy](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/09_135_Candy/09_135_Candy_01.cpp) - 2024-10-09
-
-[LeetCode_134_11_Gas_Station_03](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/08_134_Gas_Station/08_134_Gas_Station_03.cpp) - 2024-09-25
-
-[LeetCode_134_10_Gas Station_02](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/08_134_Gas_Station/08_134_Gas_Station_02.cpp) - 2024-09-25
-
-[LeetCode_134_09_Gas Station_01](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/08_134_Gas_Station/08_134_Gas_Station_01.cpp) - 2024-09-25
 
 More [Greedy Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/Greedy.md)
 
