@@ -1,4 +1,6 @@
 # Greedy Problem
+[LeetCode_968_20_Binary Tree Cameras 01](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/17_968_Binary_Tree_Cameras/17_968_Binary_Tree_Cameras_01.cpp) -2024-10-21
+
 [LeetCode_738_19_Monotone Increasing Digits](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/16_738_Monotone_Increasing_Digits/16_738_Monotone_Increasing_Digits_02.cpp) - 2024-10-21
 
 [LeetCode_738_18_Monotone Increasing Digits](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/16_738_Monotone_Increasing_Digits/16_738_Monotone_Increasing_Digits_01.cpp) - 2024-10-21

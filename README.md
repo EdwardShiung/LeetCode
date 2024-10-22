@@ -20,6 +20,8 @@ More [Dynamic Problem]()
 <td valign="top" width="33%">
 
 ### Greedy Problem
+[LeetCode_968_20_Binary Tree Cameras 01](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/17_968_Binary_Tree_Cameras/17_968_Binary_Tree_Cameras_01.cpp) -2024-10-21
+
 [LeetCode_738_19_Monotone Increasing Digits](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/16_738_Monotone_Increasing_Digits/16_738_Monotone_Increasing_Digits_02.cpp) - 2024-10-21
 
 [LeetCode_738_18_Monotone Increasing Digits](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/16_738_Monotone_Increasing_Digits/16_738_Monotone_Increasing_Digits_01.cpp) - 2024-10-21
@@ -33,8 +35,6 @@ More [Dynamic Problem]()
 [LeetCode_406_14_Queue Reconstruction By Height](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/11_406_Queue_Reconstruction_By_Height/11_406_Queue_Reconstruction_By_Height_01.cpp) - 2024-10-11
 
 [LeetCode_860_13_Lemonade Change](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/10_860_Lemonade_Change/10_860_Lemonade_Change_01.cpp) - 2024-10-09
-
-[LeetCode_135_12_Candy](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/09_135_Candy/09_135_Candy_01.cpp) - 2024-10-09
 
 More [Greedy Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/Greedy.md)
 
