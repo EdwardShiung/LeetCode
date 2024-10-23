@@ -4,7 +4,8 @@
         "queue": "cpp",
         "unordered_map": "cpp",
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "__locale": "cpp"
     },
     "cSpell.words": [
         "logn"
