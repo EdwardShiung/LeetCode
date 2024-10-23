@@ -12,9 +12,11 @@ Starting from May 21, 2024, I have committed to solving at least one LeetCode pr
 <td valign="top" width="33%">
 
 ### Dynamic Programming Problem
+[LeetCode_509_01_Fibonacci Number](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/DynamicProgramming/01_509_Fibonacci_Number_02.cpp) - 2024-10-22
+
 [LeetCode_509_01_Fibonacci Number](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/DynamicProgramming/01_509_Fibonacci_Number_01.cpp) - 2024-10-22
 
-
+<!-- More on -->
 More [Dynamic Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/DynamicProgramming/DynamicProgramming.md)
 </td>
 
@@ -36,8 +38,7 @@ More [Dynamic Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_In
 
 [LeetCode_406_14_Queue Reconstruction By Height](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/11_406_Queue_Reconstruction_By_Height/11_406_Queue_Reconstruction_By_Height_01.cpp) - 2024-10-11
 
-[LeetCode_860_13_Lemonade Change](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/10_860_Lemonade_Change/10_860_Lemonade_Change_01.cpp) - 2024-10-09
-
+<!-- More on -->
 More [Greedy Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Greedy/Greedy.md)
 
 </td>
@@ -88,7 +89,7 @@ More [Backtracking Problem](https://github.com/EdwardShiung/LeetCode/blob/main/T
 
 [LeetCode_701_40_Lowest Common Ancestor of a Binary Search Tree (Recursive Method)](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/34_701_Insert_Into_a_Binary_Search_Tree/34_701_Insert_Into_a_Binary_Search_Recursive_Method.cpp) - 2024-07-30
 
-
+<!-- More on -->
 More [Binary Tree Problem](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/BinaryTree/BinaryTreeProblem.md)
 
 </td>
@@ -213,9 +214,6 @@ More [Linked List Problem]()
 
 [LeetCode_121_07_Best Time To Buy and Sell Stock](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Array/07_121_Best_Time_to_Buy_and_Sell_Stock/07_121_Best_Time_to_Buy_and_Sell_Stock.c) - 2024-05-23
 
-[LeetCode_189_06_Rotated Array](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Array/06_189_Rotate_Array/06_189_Rotate_Array.c) - 2024-05-22
-
-[LeetCode_169_05_Majority Elements](https://github.com/EdwardShiung/LeetCode/blob/main/Top_Interview/Array/05_169_Majority_Element/05_169_Majority_Element.c) - 2024-05-21
 <!-- More on -->
 More [Array Problem]()
 </td>
