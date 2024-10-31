@@ -12,11 +12,29 @@ return the number of possible unique paths that the robot can take to reach the 
 
 The test cases are generated so that the answer will be less than or equal to 2 * 109.
 
+[Thought]:
+    1.  Using the DFS to iterative all of the nodes.
+        - Time Limited Exceed
+    2.  Using the DP method
 */
 
 class Solution {
+private:
+    int DFS(int i, int j, int m, int n) {
+        if(i > m || j > n) return 0;
+        if(i == m && j == n) return 1;
+        return DFS(i + 1, j, m, n) + DFS(i, j + 1, m, n);
+    }
+
 public:
     int uniquePaths(int m, int n) {
-        
+        return DFS(1, 1, m, n);
     }
 };
+
+int main() {
+    Solution solution;
+    int results = solution.uniquePaths(3, 2);
+    printf("%d", results);
+    return results;
+}
