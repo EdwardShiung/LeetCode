@@ -29,8 +29,23 @@ There are two ways to reach the bottom-right corner:
 class Solution {
 public:
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-        
+        // Calculate the col
+        int col = obstacleGrid.size();
+        // Calculate the row
+        int row = obstacleGrid[0].size();
+        // Basic Limitation (If starting point or ending point is obstacle, return 0)
+        if(obstacleGrid[0][0] || obstacleGrid[col - 1][row - 1]) return 0;
+        // Using Loop to calculate first row and first col (Initialization)
+        vector<vector<int>> dp(col, vector<int>(row, 0));
+        for(int i = 0; i < col && obstacleGrid[i][0] == 0; i++) dp[i][0] = 1;
+        for(int j = 0; j < row && obstacleGrid[0][j] == 0; j++) dp[0][j] = 1;
 
-        
+        for(int i = 1; i < col; i++) {
+            for(int j = 1; j < row; j++) {
+                if(obstacleGrid[i][j] == 1) continue;
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+            }
+        }
+        return dp[col - 1][row - 1];
     }
 };
