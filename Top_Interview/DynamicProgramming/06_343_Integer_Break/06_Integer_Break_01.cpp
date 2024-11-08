@@ -9,7 +9,6 @@ and maximize the product of those integers.
 Return the maximum product you can get.
 
  
-
 Example 1:
 
 Input: n = 2
