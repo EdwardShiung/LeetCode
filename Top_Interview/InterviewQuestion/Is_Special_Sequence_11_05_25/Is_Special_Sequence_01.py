@@ -34,54 +34,85 @@
 # Palindrome_02 = d
 
 
+# Not Good for Time Complexity
+# class Solution:
+  
+#   # Creating a helper function to check if the string is palindrome, return True directly
+#   def is_palindrome(self, s:str) -> bool:
+#       if s == s[::-1]:
+#         return True
+      
+#   # Determine the string s is a palindrome after removing one character.
+#   def is_palindrome_after_remove(self, s:str) -> bool:
+    
+#     # If the string is palindrome, return True directly.
+#     if self.is_palindrome(s):
+#       print(True)
+#       return True
 
+#     # Using for-loop to detect the palindrome
+#       # Each time, we remove one element to detect the substring
+#     for i in range(len(s)):
+#       # Remove a character and rearrange the string
+#       newString = s[:i] + s[i + 1:]
+#       print("newString", newString)
+      
+#       if self.is_palindrome(newString):
+#         print(True)
+#         return True
+      
+#     print(False)
+#     return False
+  
+#   def isSpecialSequence(self, dna_sequence: str) -> str:
+
+#     n = len(dna_sequence)
+
+#     for i in range(n):
+#       preCharacters = dna_sequence[:i]
+#       postCharacters = dna_sequence[i:]
+#       print("PreCharacters",preCharacters, "PostCharacters", postCharacters)
+#       # Pre-Characters use removing function but Post-Characters use normal is_palindrome function
+#         # The question reminds us that you can remove at most once, so we only remove Pre-Characters.
+#       if(self.is_palindrome_after_remove(preCharacters) and self.is_palindrome(postCharacters)):
+#         return "YES"
+#     return "NO"
+
+
+# Optimize the Time Complexity
 class Solution:
   
-  # Creating a helper function to check if the string is palindrome, return True directly
-  def is_palindrome(self, s:str) -> bool:
-      if s == s[::-1]:
+    def is_palindrome(self, s: str) -> bool:
+        left, right = 0, len(s) - 1
+        while left < right:
+            if s[left] != s[right]:
+                return False
+            left += 1
+            right -= 1
         return True
-      
-  # Determine the string s is a palindrome after removing one character.
-  def is_palindrome_after_remove(self, s:str) -> bool:
-    
-    # If the string is palindrome, return True directly.
-    if self.is_palindrome(s):
-      print(True)
-      return True
-
-    # Using for-loop to detect the palindrome
-      # Each time, we remove one element to detect the substring
-    for i in range(len(s)):
-      # Remove a character and rearrange the string
-      newString = s[:i] + s[i + 1:]
-      print("newString", newString)
-      
-      if self.is_palindrome(newString):
-        print(True)
-        return True
-      
-    print(False)
-    return False
   
-  def isSpecialSequence(self, dna_sequence: str) -> str:
+    def is_palindrome_after_remove(self, s: str) -> bool:
+        left, right = 0, len(s) - 1
+        while left < right:
+            if s[left] != s[right]:
+                return self.is_palindrome(s[left + 1:right + 1]) or self.is_palindrome(s[left:right])
+            left += 1
+            right -= 1
+        return True
+  
+    def isSpecialSequence(self, dna_sequence: str) -> str:
+        n = len(dna_sequence)
+        for i in range(n):
+            preCharacters = dna_sequence[:i]
+            postCharacters = dna_sequence[i:]
+            if self.is_palindrome_after_remove(preCharacters) and self.is_palindrome(postCharacters):
+                return "YES"
+        return "NO"      
 
-    n = len(dna_sequence)
 
-    for i in range(n):
-      preCharacters = dna_sequence[:i]
-      postCharacters = dna_sequence[i:]
-      print("PreCharacters",preCharacters, "PostCharacters", postCharacters)
-      # Pre-Characters use removing function but Post-Characters use normal is_palindrome function
-        # The question reminds us that you can remove at most once, so we only remove Pre-Characters.
-      if(self.is_palindrome_after_remove(preCharacters) and self.is_palindrome(postCharacters)):
-        return "YES"
-    return "NO"
-
-      
-testString = "abcazd"
+testString = "a"
 solution = Solution()
-solution.isSpecialSequence(testString)
+print(solution.isSpecialSequence(testString))
 
 
 
