@@ -30,8 +30,6 @@ for (int i = 0; i < k; i++) {
 }
 If all assertions pass, then your solution will be accepted.
 
- 
-
 Example 1:
 
 Input: nums = [1,1,2]
@@ -58,7 +56,15 @@ nums is sorted in non-decreasing order.
 
 class Solution {
 public:
-    int removeDuplicates(vector<int> nums) {
-
+    int removeDuplicates(vector<int>& nums) {
+        int slowIndex = 0;
+        for(int fastIndex = 1; fastIndex < nums.size(); fastIndex++) {
+            if(nums[slowIndex] != nums[fastIndex]) {
+                nums[slowIndex + 1] = nums[fastIndex];
+                slowIndex++;
+            }
+        }
+        return slowIndex + 1;
     }
 };
+

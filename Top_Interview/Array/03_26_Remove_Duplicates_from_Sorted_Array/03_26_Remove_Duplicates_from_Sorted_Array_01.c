@@ -11,7 +11,7 @@ int main(){
 
     //2nd test case:
     int nums[] = {0,0,1,1,1,2,2,3,3,4};
-    int numsSize = 10;
+    int numsSize = 10; 
     removeDuplicates(nums, numsSize);
 }
 
