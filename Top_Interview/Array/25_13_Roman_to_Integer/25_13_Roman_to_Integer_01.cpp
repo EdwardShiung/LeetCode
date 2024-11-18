@@ -57,9 +57,26 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 class Solution {
 public:
     int romanToInt(string s) {
-        
+
+        // result
+        int result = 0;
+
+        for(int i = 0; i < s.size(); i++) {
+            int curr = syntax[s[i]];
+            int next = (i + 1 < s.size()) ? syntax[s[i + 1]] : 0;
+
+            if(curr < next) {
+                result -= curr;
+            }else {
+                result += curr;
+            }
+            
+            cout << result << endl;
+        }
+        return result;
     };
 private:
+        // Using unordered_map to store the key and value
         unordered_map<char, int> syntax = {
             {'I', 1},
             {'V', 5},
@@ -69,6 +86,26 @@ private:
             {'D', 500},
             {'M', 1000}
         };
-
-        
 };
+
+
+
+int main() {
+
+    Solution solution;
+    string s = "MCMXCIV";
+
+    int total = solution.romanToInt(s);
+
+    cout << total << endl;
+
+
+
+    // Review about using unordered_map and print it out
+    // unordered_map<char, int> test = {
+    //     {'A', 1},
+    //     {'B', 2}
+    // };
+
+    // cout << test['A'] << endl;
+}
