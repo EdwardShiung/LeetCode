@@ -119,3 +119,6 @@ print(solution.isSpecialSequence(testString))
 
 
 
+
+
+
