@@ -84,7 +84,21 @@ public:
         // Store answer to the result
         string result = "";
 
-        for(const auto& [value, symbol] : valueSchema) {
+        // C++17:
+        // for(const auto& [value, symbol] : valueSchema) {
+        //     if(num == 0) break;
+
+        //     while(num >= value) {
+        //         result += symbol;
+        //         num -= value;
+        //     }
+        // }
+
+        // C++11:
+        for(const auto& pair : valueSchema) {
+            int value = pair.first;
+            string symbol = pair.second;
+
             if(num == 0) break;
 
             while(num >= value) {
@@ -92,9 +106,7 @@ public:
                 num -= value;
             }
         }
-
         return result;
-
     }
 private:
     vector<pair<int, string>> valueSchema{
@@ -132,10 +144,10 @@ private:
 int main() {
 
 
-    Solution solution;
+    // Solution solution;
 
-    string result = solution.intToRoman(3749);
-    cout << result << endl;
+    // string result = solution.intToRoman(3749);
+    // cout << result << endl;
 
 
     //     unordered_map<int, string> valueSchema = {
@@ -161,6 +173,7 @@ int main() {
 
 
 /*
+
 這兩種寫法都用來將整數對應到羅馬數字符號，但它們使用了不同的數據結構，並且在使用場景和性能方面有所不同。
 
 ### 差異分析
@@ -188,8 +201,5 @@ int main() {
 - **`unordered_map<int, string>`**：適合需要快速查找的情況，但不在意順序。
 
 因此，為了正確地將整數轉換為羅馬數字，應使用 `vector<pair<int, string>>`，以便保留正確的順序。
-
-
-
 
 */
