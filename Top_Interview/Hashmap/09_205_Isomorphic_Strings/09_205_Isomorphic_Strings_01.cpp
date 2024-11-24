@@ -47,6 +47,10 @@ Constraints:
 t.length == s.length
 s and t consist of any valid ascii character.
 
+    [Thought]:
+    1. Understand about the hash map method, such as find, count, and end.
+
+
 */
 
 
