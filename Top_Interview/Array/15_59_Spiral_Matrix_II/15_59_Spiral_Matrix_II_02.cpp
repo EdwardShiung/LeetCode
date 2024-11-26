@@ -27,11 +27,14 @@ Constraints:
 
     [Similar Question]
     1. LeetCode 54
+    [Thought]
+    1. The question is easy because you just need to follow the
 */
 class Solution{
 public:
     vector<vector<int>> generateMatrix(int n){
-
+        // Set a default
+        vector<vector<int>> res(n, vector<int>(n, 0));
     };
 };
 
