@@ -33,8 +33,11 @@ Constraints:
 class Solution{
 public:
     vector<vector<int>> generateMatrix(int n){
-        // Set a default
-        vector<vector<int>> res(n, vector<int>(n, 0));
+        // Set a default 2D Array
+       vector<vector<int>> result(n, vector<int>(n , 0));
+       
+
+
     };
 };
 
