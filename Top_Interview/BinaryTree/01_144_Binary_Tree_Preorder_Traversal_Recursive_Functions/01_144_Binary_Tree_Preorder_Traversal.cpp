@@ -24,9 +24,9 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {};
 };
 
-
 class Solution {
 public:
+
     // 確定參數和返回值:
         // 因為要 print 出 遍歷順序，所以參數裡需要傳入 vector 來放節點的數值。
         // 不需要進一步處理數據，所以返回 void
