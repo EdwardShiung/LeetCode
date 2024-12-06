@@ -48,6 +48,7 @@ All the words in s are separated by a single space.
 
     [Thought]:
     1. You have to familiar with hashmap.
+    2. You have to familiar with count and find method.
 
 */
 
