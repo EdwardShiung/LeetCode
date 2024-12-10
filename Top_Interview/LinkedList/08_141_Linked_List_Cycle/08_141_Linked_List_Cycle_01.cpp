@@ -57,9 +57,9 @@ public:
         // Fast pointer
         ListNode* fast = head;
         /*
-        為什麼需要檢查 fast 和 fast->next？
-        因為 fast 每次移動兩步，如果列表長度不足或沒有環，fast 很可能會指向空指標（NULL）。
-        此時若存取 fast->next，會導致程式崩潰。
+            為什麼需要檢查 fast 和 fast->next？
+            因為 fast 每次移動兩步，如果列表長度不足或沒有環，fast 很可能會指向空指標（NULL）。
+            此時若存取 fast->next，會導致程式崩潰。
         */
         // Using while loop to detect the cycle
         while(fast != NULL && fast->next != NULL) {
