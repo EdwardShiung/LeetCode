@@ -6,7 +6,7 @@ class ListNode:
 
 class Solution:
     def reverseBetween(self, head:Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
-        dummy = ListNode(0, next)
+        dummy = ListNode(0, head)
         
         # 1.Reach curr node at postion "Left"
         leftPrev, cur = dummy, head
