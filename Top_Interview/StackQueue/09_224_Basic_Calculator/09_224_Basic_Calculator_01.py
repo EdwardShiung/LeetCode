@@ -65,3 +65,6 @@ class Solution:
             
         return result
 
+test = "123"
+res = Solution().calculate(test)
+print(res)
