@@ -1,40 +1,43 @@
-#include <iostream>
-// 引入 vector 函式庫
-#include <vector>
-using namespace std;
-
 /*
-1. Vector 為動態陣列：
+1. std::vector 為動態陣列：
     - 末位插入和末位刪除效率高
         - 中間插入和中間刪除”最慢“
     - "動態" 擴展容量(dynamic array)，隨機訪問
 */
 /*
     操作整理：
-        添加元素	push_back(val)	在末尾添加一个元素
-        删除元素	pop_back()	删除末尾元素
-        获取大小	size()	返回当前元素个数
-        随机访问	v[index] 或 v.at(index)	获取指定位置的元素
-        插入元素	insert(pos, val)	在指定位置插入一个元素
-        删除指定位置元素	erase(pos)	删除指定位置的元素
-        清空容器	clear()	删除所有元素
-        检查是否为空	empty()	返回是否为空
-        访问首尾元素	front() / back()	获取第一个或最后一个元素
-        动态容量	capacity()	返回当前容量
-        预分配容量	reserve(n)	预分配至少能容纳 n 个元素的空间
+        添加元素	     push_back(val)	在末尾添加一个元素
+        删除元素	     pop_back()	删除末尾元素
+        获取大小	     size()	返回当前元素个数
+        随机访问	     v[index] 或 v.at(index)	获取指定位置的元素
+        插入元素	     insert(pos, val)	在指定位置插入一个元素
+        删除指定位置元素  erase(pos)	删除指定位置的元素
+        清空容器	     clear()	删除所有元素
+        检查是否为空	  empty()	返回是否为空
+        访问首尾元素	  front() / back()	获取第一个或最后一个元素
+        动态容量	     capacity()	返回当前容量
+        预分配容量	     reserve(n)	预分配至少能容纳 n 个元素的空间
         排序（需要算法库）	sort(v.begin(), v.end())	将元素按升序排序
 */
+#include <iostream>
+// 引入 vector 函式庫
+#include <vector>
+using namespace std;
 
 int main() {
     // Initialization
     // 有四種初始化方法：
+
     // 1. Empty Vector
     vector<int> v1;
+
     // 2. Vector of Size with default values(0 for int)
     vector<int> v2(3);
+
     // 3. Vector of Size 3 with all values initialized to 10
     vector<int> v3(3, 10);
-    //4. Vector initialized with a list of values
+
+    // 4. Vector initialized with a list of values
     vector<int> v = {1, 2, 3};
 
 
@@ -71,9 +74,6 @@ int main() {
     for(auto it = v.begin(); it != v.end(); it++) {
         cout << *it << " ";
     }
-
-
-
 
     // 遍歷結果  
     for (int x : v) {
