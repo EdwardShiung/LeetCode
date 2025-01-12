@@ -68,5 +68,6 @@
     "cSpell.words": [
         "logn"
     ],
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    // "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-14"
 }

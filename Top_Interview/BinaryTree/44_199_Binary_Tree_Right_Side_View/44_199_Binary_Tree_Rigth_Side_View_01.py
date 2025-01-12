@@ -10,6 +10,7 @@ Input: root = [1,2,3,null,5,null,4]
 Output: [1,3,4]
 
 Explanation:
+
 Example 2:
 
 Input: root = [1,2,3,4,null,null,null,5]
@@ -17,6 +18,7 @@ Input: root = [1,2,3,4,null,null,null,5]
 Output: [1,3,4,5]
 
 Explanation:
+
 Example 3:
 
 Input: root = [1,null,3]
@@ -47,31 +49,23 @@ class TreeNode:
 
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> list[int]:
-        # Edge Case
-        if not root:
-            return []
-        # Using a result to store the outcome
+        # Using a res variable to store the outcome
         res = []
-        # Using the deque to handle the problem
+        # Using a deque to process the solution
+        '''
+        dq = deque([root])
+        等同於：
+        dq = deque()
+        dq.append(root)
+        '''
         dq = deque([root])
         
         while dq:
-            # 用來記錄當前最右邊的值
+            # Track the the most right side node from deque
             rightSide = None
+            # Record each layer of node
             dqLen = len(dq)
             
-            '''
-            這部分也可以這樣寫，不用去判斷 node.left 和 node.right。
-            原因在於，放進去如果為空值，將再下一次循環中，assign 到 node 的值，進行判斷
-            
-            for i in range(dqLen):
-                node = dq.popleft()
-                if node:
-                    rightSide = node
-                    
-                    dq.append(node.left)
-                    dq.append(node.right)
-            '''
             for i in range(dqLen):
                 node = dq.popleft()
                 if node:
@@ -80,24 +74,12 @@ class Solution:
                         dq.append(node.left)
                     if node.right:
                         dq.append(node.right)
-                    
             if rightSide:
                 res.append(rightSide.val)
         
         return res
-    
-sol = Solution()
-root = TreeNode(1)
-root.left = TreeNode(2)
-root.right = TreeNode(3)
-root.left.right = TreeNode(5)
-root.right.right = TreeNode(4)
-result = sol.rightSideView(root)
-
-for i in range(len(result)):
-    print(result[i])
-        
-        
-        
-        
+            
+            
+            
+            
         
