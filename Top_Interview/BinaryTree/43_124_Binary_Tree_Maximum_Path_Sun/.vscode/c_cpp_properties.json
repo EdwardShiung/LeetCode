@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                // 系統默認路徑
+                "/usr/local/include",  
+                "/usr/include",
+                // Clang 的標準路徑
+                "/Library/Developer/CommandLineTools/usr/include/c++/v1",  
+                // GNU G++ 的標準路徑
+                "/opt/homebrew/opt/gcc/include/c++/14",  
+                // 針對 ARM 的標準路徑
+                "/opt/homebrew/opt/gcc/include/c++/14/aarch64-apple-darwin"  
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/opt/homebrew/bin/g++-14",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}

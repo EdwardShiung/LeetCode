@@ -60,7 +60,10 @@
         "typeinfo": "cpp",
         "unordered_set": "cpp",
         "variant": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "execution": "cpp",
+        "memory": "cpp",
+        "print": "cpp"
     },
     "cSpell.words": [
         "logn"

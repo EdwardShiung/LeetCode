@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=nLYHbrMpBRs
 #include <climits>
 using namespace std;
 
-class TreeNode {
+struct TreeNode {
     int val;
     TreeNode* left;
     TreeNode* right;
@@ -58,5 +58,12 @@ private:
 
 int main() {
     Solution sol;
-    
+    TreeNode* root = new TreeNode(-10);
+    root->left = new TreeNode(9);
+    root->right = new TreeNode(20);
+    root->right->left = new TreeNode(15);
+    root->right->right = new TreeNode(7);
+
+    cout << sol.maxPathSum(root) << endl;
+    return 0;
 }
