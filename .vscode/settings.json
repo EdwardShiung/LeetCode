@@ -63,7 +63,9 @@
         "algorithm": "cpp",
         "execution": "cpp",
         "memory": "cpp",
-        "print": "cpp"
+        "print": "cpp",
+        "chrono": "cpp",
+        "functional": "cpp"
     },
     "cSpell.words": [
         "logn"

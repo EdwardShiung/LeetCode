@@ -232,3 +232,28 @@ int main() {
 //     return 0;
 // }
 
+// 綜合例子：
+// int main() {
+//     deque<int> dq;
+
+//     // 使用 push_back() 在末尾添加元素
+//     dq.push_back(10); // dq: [10]
+//     dq.push_back(20); // dq: [10, 20]
+
+//     // 使用 push_front() 在开头添加元素
+//     dq.push_front(5); // dq: [5, 10, 20]
+//     dq.push_front(1); // dq: [1, 5, 10, 20]
+
+//     // 访问第一个和最后一个元素
+//     cout << "第一个元素 (front): " << dq.front() << endl; // 输出: 1
+//     cout << "最后一个元素 (back): " << dq.back() << endl; // 输出: 20
+
+//     // 打印当前元素
+//     cout << "当前元素: ";
+//     for (int x : dq) {
+//         cout << x << " ";
+//     }
+//     cout << endl; // 输出: 1 5 10 20
+
+//     return 0;
+// }
