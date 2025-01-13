@@ -42,6 +42,7 @@ class Solution:
         high = rows * cols - 1
         
         while low <= high:
+            # Python 使用 "//" 代表整數除法
             mid = (low + high) // 2
             num = matrix[mid // cols][mid % cols]
             
