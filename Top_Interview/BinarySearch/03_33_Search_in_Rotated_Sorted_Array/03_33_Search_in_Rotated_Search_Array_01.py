@@ -30,4 +30,20 @@ Constraints:
 All values of nums are unique.
 nums is an ascending array that is possibly rotated.
 -104 <= target <= 104
+
+[Thought]:
+1. 如果現行找尋：
+    - TC = O(n)
+    - SC = O(n)
 '''
+
+from typing import List
+
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        for i in range(len(nums)):
+            if nums[i] == target:
+                return i
+        
+        return -1
+        
