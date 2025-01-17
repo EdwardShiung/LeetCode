@@ -1,4 +1,4 @@
-'''
+/*
 Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
 
 [4,5,6,7,0,1,2] if it was rotated 4 times.
@@ -35,24 +35,40 @@ n == nums.length
 -5000 <= nums[i] <= 5000
 All the integers of nums are unique.
 nums is sorted and rotated between 1 and n times.
+*/
+#include <iostream>
+#include <vector>
+using namespace std;
 
-'''
-from typing import List
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+        
+        // Set the Boundaries
+        int left = 0;
+        int right = nums.size() - 1;
 
-class Solution:
-    def findMin(self, nums: List[int]) -> int:
-        
-        # Set the Boundaries
-        left = 0
-        right = len(nums) - 1
-        
-        # Using the while-loop to process the Binary Search
-        while left < right:
-            mid = (left + right) // 2
-            
-            if nums[mid] > nums[right]:
-                left = mid + 1
-            else:
-                right = mid
-        
-        return nums[left]
+        // Using while loop to process the solution
+        while(left < right){
+            int mid = (left + right) / 2;
+
+            if(nums[mid] > nums[right]){
+                left = mid + 1;
+            }else {
+                right = mid;
+            }
+        }
+        return nums[left];
+    }
+};
+
+int main() {
+    Solution sol;
+
+    vector<int> nums = {3,4,5,1,2}
+
+    int result = sol.findMin(nums);
+
+    cout << result << endl;
+
+}
