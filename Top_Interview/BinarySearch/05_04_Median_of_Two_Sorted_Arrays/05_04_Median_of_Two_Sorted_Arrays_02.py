@@ -43,9 +43,9 @@ nums2.length == n
             --> 使用 Timsort 混合排序 （詳細請看附檔案 python 系列）
     
     2. 方法二： Two Pointer Method
-        - nums1 = {1,3}
-        - nums2 = {2}
-        
+        - 兩邊各挑一個，小的先排
+        - TC = O(m + n)
+        - 此方法較為佳
         
     3. 方法三： Binary Search Method
     
