@@ -145,7 +145,7 @@ class Solution:
         
         # Using the while-loop to process the result
         while cutL <= cutR:
-            cut1 = (cutR - cutR) // 2 + cutL
+            cut1 = (cutR - cutL) // 2 + cutL
             # 因為最終左右兩邊個數一樣，確定了 cut1，就可以求得 cut2
             cut2 = totalLength // 2 - cut1
             
