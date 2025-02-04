@@ -1,7 +1,7 @@
 /*
 题目描述】
 
-给定一个有 n 个节点的有向无环图，节点编号从 1 到 n。
+给定一个有 n 个节点的"有向无环图"，节点编号从 1 到 n。
 请编写一个函数，找出并返回所有从节点 1 到节点 n 的路径。
 每条路径应以节点编号的列表形式表示。
 
@@ -69,7 +69,7 @@ vector<int> path;
 // x 代表目前遍歷的節點
 // n 終點
 // graph 存當前的圖
-void dfs(const vector<list>>& graph, int x, int n) {
+void dfs(const vector<list<int>>& graph, int x, int n) {
     // Step_02: 終止條件
     // 當前節點 x 到達終點 n
     if(x == n) {
@@ -78,10 +78,10 @@ void dfs(const vector<list>>& graph, int x, int n) {
     }
 
     // 遍歷 x 節點，所有連接的節點
-    for (int i : graph[x]) { // 找到 x指向的节点
-        path.push_back(i); // 遍历到的节点加入到路径中来
-        dfs(graph, i, n); // 进入下一层递归
-        path.pop_back(); // 回溯，撤销本节点
+    for (int i : graph[x]) { // 找到 X 指向的節點
+        path.push_back(i); // 遍歷到的節點加入到路徑中來
+        dfs(graph, i, n); // 進入下一層遞歸
+        path.pop_back(); // 回溯，撤銷本節點
     }
 }
 
@@ -110,7 +110,7 @@ int main() {
     //     graph[s][t] = 1;
     // }
 
-    // 1. 利用 Adjacency List 作為儲存的格式，並初始化
+    // 2. 利用 Adjacency List 作為儲存的格式，並初始化
     // list 為 C++ 裡的鏈錶
     vector<list<int>> graph(n + 1);
     while(m--) {
