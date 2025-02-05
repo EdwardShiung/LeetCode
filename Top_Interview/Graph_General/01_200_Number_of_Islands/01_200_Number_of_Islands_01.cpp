@@ -34,8 +34,15 @@ n == grid[i].length
 1 <= m, n <= 300
 grid[i][j] is '0' or '1'.
 
+[Though]:
+    [參考解答]：https://www.youtube.com/watch?v=RHUSlUevd8k
+    1. 本題使用 DFS 方法
+        - 將已經遍歷過的 Index 從 1 改成 0，因為
 */
 
+#include <iostream>
+#include <vector>
+using namespace std;
 
 class Solution {
 public:
@@ -61,6 +68,7 @@ private:
         if(i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == '0') return;
         // 標記為 訪問過了！
         grid[i][j] = '0';
+        // 進行：上、下、左、右遍歷 (利用DFS)
         dfs(grid, i, j + 1);
         dfs(grid, i, j - 1);
         dfs(grid, i + 1, j);
