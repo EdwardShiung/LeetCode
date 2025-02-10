@@ -52,6 +52,15 @@ Node.val is unique for each node.
 There are no repeated edges and no self-loops in the graph.
 The Graph is connected and all nodes can be visited starting from the given node.
 
+[Reference]:
+    https://www.youtube.com/watch?v=2IvGT0PMbDk
+    https://fufuleetcode.github.io/2019/08/21/lc-133/
+    
+[Thought]:
+    1. 本題可以作為 Graph 的基礎題
+        - DFS - 可以說是一個 Stack 過程
+        - BFS - 透過 queue 過程
+
 */
 #include <iostream>
 #include <vector>
