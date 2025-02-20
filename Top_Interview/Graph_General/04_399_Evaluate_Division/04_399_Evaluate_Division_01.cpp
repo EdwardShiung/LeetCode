@@ -43,3 +43,4 @@ queries[i].length == 2
 Ai, Bi, Cj, Dj consist of lower case English letters and digits.
 
 */
+
