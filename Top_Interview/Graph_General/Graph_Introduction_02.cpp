@@ -23,7 +23,7 @@ void dfs(Graph graph, int currentNode) {
 
     // 2. Iterate through all choices (adjacent nodes)
     for (int nextNode : graph.adjList[currentNode]) {
-        // 3. Make a choice (process the node)
+        // 3. Process the node
         path.push_back(nextNode);  // or mark as visited if needed
 
         // 4. Recursive call
