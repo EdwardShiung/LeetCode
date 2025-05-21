@@ -86,7 +86,6 @@ void dfs(const vector<list<int>>& graph, int x, int n) {
 }
 
 
-
 int main() {
     // 初始化 graph
         // n 為節點
