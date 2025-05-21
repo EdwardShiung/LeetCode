@@ -112,6 +112,7 @@ int main() {
         graph[s].push_back(t);
     }
 
+
     // Create an instance of the Solution class
     Solution solution;
     // Start DFS from node 1 to node n
@@ -120,7 +121,6 @@ int main() {
 
     // Results
     vector<vector<int>> results = solution.results;
-
 
     // Check if there are any paths found
     if(results.empty()){
@@ -136,3 +136,39 @@ int main() {
         }
     }
 }
+
+
+/**
+ *  This code is not follow the "clean code" principle.
+ *  Here are some suggestions to improve the code:
+ * 
+ *  1. Use meaningful variable names: 
+ *      - Instead of using single-letter variable names like "s" and "t",
+ *      use more descriptive names like "startNode" and "targetNode".
+ *      - Instead of using "n" and "m", use "numberOfNodes" and "numberOfEdges".
+ *      - Instead of using "start" and "end" is not clear, use source and destination.
+ * 
+ *  2. Avoid to use the "using namespace std;", 
+ *     In small code, such as leetcode, it's ok to use it. 
+ *     However, in larger codebases, we should avoid it to prevent name conflicts. 
+ *     Instead, use "std::" prefix for standard library functions and types. 
+ *     For example, use "std::vector, std::list
+ * 
+ *  3. Data encapsulation and abstraction:
+ *     - The class "Solution" is responsible for the DFS algorithm,
+ *       but it also contains the results and path variables.alignas
+ *     - We could use private member variables and provide public methods to access them.
+ *        - This will help to encapsulate the data and provide a cleaner interface.
+ *   
+ *  4. Don't use magic number and entry point:
+ *    - The code uses "1" as the starting node, which is not clear.
+ *    - Also, don't use "n" as the ending point
+ * 
+ *  5. In main function, we need to clearly define the entry point of the program.
+ *    - read the Graph
+ *    - process the Graph
+ *    - output the result
+ * 
+ * 
+ * 
+ */
