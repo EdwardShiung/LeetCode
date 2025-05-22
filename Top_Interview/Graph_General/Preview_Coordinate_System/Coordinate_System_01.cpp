@@ -118,8 +118,6 @@ int bfs(vector<vector<char>>& grid, vector<vector<bool>>& visited, int x, int y)
 }
 
 
-
-
 int main() {
     // Define the grid
     vector<vector<char>> grid = {    
