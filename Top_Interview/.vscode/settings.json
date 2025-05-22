@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.md": "bat",
         "vector": "cpp",
         "__bit_reference": "cpp",
         "__config": "cpp",
@@ -60,6 +61,9 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "variant": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "execution": "cpp",
+        "memory": "cpp",
+        "print": "cpp"
     }
 }
