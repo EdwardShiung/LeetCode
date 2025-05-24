@@ -37,7 +37,6 @@ grid[i][j] is '0' or '1'.
 [Though]:
     [參考解答]：https://www.youtube.com/watch?v=RHUSlUevd8k
     1. 本題使用 DFS 方法
-        - 將已經遍歷過的 Index 從 1 改成 0，因為
 */
 
 #include <iostream>
