@@ -39,6 +39,9 @@
 #include <utility>
 #include <algorithm>
 
+// Define the 4 direction
+#define DIRECTION_COUNT 4
+
 class Solution {
     public:
     int findMaximumArea(std::vector<std::vector<char>>& graph, int rowCount, int colCount){
@@ -59,7 +62,7 @@ class Solution {
 
     private:
     // Coordinate of 4 direction
-    int dir[4][2] = {
+    int dir[DIRECTION_COUNT][2] = {
         {-1, 0},    //up
         {1, 0},     //down
         {0, 1},     //right
@@ -86,7 +89,7 @@ class Solution {
             int currX = cur.first;
             int currY = cur.second;
             // Loop around the cell
-            for(int i = 0; i < 4; i++) {
+            for(int i = 0; i < DIRECTION_COUNT; i++) {
                 int nextX = currX + dir[i][0];
                 int nextY = currY + dir[i][1];
 
@@ -162,4 +165,6 @@ int main() {
  * 4. 了解如何使用 std::max --> 庫 #include<algorithm>
  *      --> 比較時，利用 curVal vs maxVal
  *      --> curVal 為動態
+ * 5. 使用宏來定義 4 direction
+ *      --> define DIRECTION_COUNT 4
  */
