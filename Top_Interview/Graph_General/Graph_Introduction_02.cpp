@@ -9,8 +9,8 @@
 // ==========================
 
 // Global variables to store all valid paths
-vector<vector<int>> result;  // Final results (all paths)
-vector<int> path;            // Current path (Single path)
+std::vector<std::vector<int>> result;  // Final results (all paths)
+std::vector<int> path;            // Current path (Single path)
 
 // DFS function definition
 void dfs(Graph graph, int currentNode) {

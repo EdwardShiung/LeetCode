@@ -22,9 +22,6 @@
 1
 提示信息
 
-
-
-
 在矩阵中心部分的岛屿，因为没有任何一个单元格接触到矩阵边缘，所以该岛屿属于孤岛，总面积为 1。
 
 
@@ -37,83 +34,102 @@
 [Thought]:
 
 BFS solution
- *  我這個做法不是很正確！本題“孤島”，強調：所有单元格都不接触边缘的岛屿！！
+ *  file 01 這個做法不是很正確！本題“孤島”，強調：所有单元格都不接触边缘的岛屿！！並且，求“孤島”個數！
     因此，請看 file 02 BFS 正確做法！
+
+    由於，題目強調，所有單元格都不接觸邊緣的島嶼，
+    換言之，我是否可以先抓出邊緣四周為 "1" 且連接再一起的島嶼，再將他們變成 “0”。
+    最後，再次計算孤島總面積 ("1" 沒有靠邊的島嶼)
  * 
  */
 
 #include <iostream>
-#include <vector>
-#include <queue>
 
 #define DIRECTION_COUNT 4
 
 class Solution {
-    
     public:
-    bool findIslatedIsland(std::vector<std::vector<char>>& graph, int rowCount, int colCount) {
-        bool hasIslated = false;
-        std::vector<std::vector<bool>> visited(rowCount, std::vector<bool>(colCount, false));
+    
+    // From left side and right side to search the island ("1")
+    void leftToRight(std::vector<std::vector<char>>& graph, int rowCount, int colCount) {
+        for(int i = 0; i < rowCount; i++) {
+            if(graph[i][0] == '1') bfs(graph, i, 0);
+            if(graph[i][colCount - 1]) bfs(graph, i, colCount - 1);
+        }
+    };
+
+    // From top to bottom side to search the island ("1")
+    void topToBottom(std::vector<std::vector<char>>& graph, int rowCount, int colCount) {
+        for(int j = 0; j < colCount; j++) {
+            if(graph[0][j] == '1') bfs(graph, 0, j);
+            if(graph[rowCount - 1][j] == '1') bfs(graph, rowCount - 1, j);
+        }
+    };
+
+    // Count the Isolated Island
+    int countIsolatedIsland(std::vector<std::vector<char>>& graph, int rowCount, int colCount) {
+        int count = 0;
         for(int i = 0; i < rowCount; i++) {
             for(int j = 0; j < colCount; j++) {
-                if(!visited[i][j] && graph[i][j] == '1') {
-                    bfs(graph, visited, i, j, hasIslated);
-                }
+                if(graph[i][j] == '1') count++;
             }
         }
-        return hasIslated;
+        return count;
     };
 
     private:
-    // coordinator of 4 directions
+    // Coordinator of 4 directions
     int dir[DIRECTION_COUNT][2] = {
         {-1, 0},    //up
         {1, 0},     //down
         {0, -1},    //left
-        {0, 1},     //right
+        {0, 1}      //right
     };
-    
-    void bfs(std::vector<std::vector<char>>& graph, std::vector<std::vector<bool>>& visited, int currRow, int currCol, bool& hasIslated) {
-        // Set a queue
+
+    void bfs(std::vector<std::vector<char>>& graph, int currRow, int currCol) {
+        // Using a queue to assist 
         std::queue<std::pair<int, int>> que;
         que.push({currRow, currCol});
-        // Record the visited
-        visited[currRow][currCol] = true;
-
+        // Once join the queue, we need to mark it!
+        graph[currRow][currCol] = '0';
         while(!que.empty()) {
-            // Get the current cell X and Y
             std::pair<int, int> curr = que.front();
             que.pop();
-
-            // Get the current
             int currX = curr.first;
             int currY = curr.second;
 
+            // Iterative around the cell
             for(int i = 0; i < DIRECTION_COUNT; i++) {
                 int nextX = currX + dir[i][0];
                 int nextY = currY + dir[i][1];
+                // Limitation
                 if(nextX < 0 || nextX >= graph.size() || nextY < 0 || nextY >= graph[0].size()) continue;
-                if(!visited[nextX][nextY] && graph[nextX][nextY] == '0') {
-                    hasIslated = true;
+                if(graph[nextX][nextY] == '1') {
+                    que.push({nextX, nextY});
+                    graph[nextX][nextY] = '0';
                 }
             }
         }
     };
 };
 
-// Create a Graph
+
+// Function: createGraph
 std::vector<std::vector<char>> createGraph(int rowCount, int colCount) {
+    
+    // Create a 2D vector graph
     std::vector<std::vector<char>> graph(rowCount, std::vector<char>(colCount));
+    // Loop to generate the graph
     for(int i = 0; i < rowCount; i++) {
-        for(int j = 0; j < colCount; j++) {
+        for(int j = 0 ; j < colCount; j++) {
             std::cin >> graph[i][j];
         }
     }
     return graph;
 };
 
-// Print a Graph
-void printGraph(std::vector<std::vector<char>>& graph) {
+// Print the Graph
+void printGraph(const std::vector<std::vector<char>>& graph) {
     for(const std::vector<char> row: graph) {
         for(const char cell: row) {
             std::cout << cell << " ";
@@ -125,18 +141,20 @@ void printGraph(std::vector<std::vector<char>>& graph) {
 int main() {
     int rows, cols;
     std::cin >> rows >> cols;
-
-    // create a graph
+   
+    // Create a Graph
     std::vector<std::vector<char>> graph = createGraph(rows, cols);
 
-    //print a graph
+    //Print the Graph
     printGraph(graph);
 
-    // Verified if islated island or not
+    // Calculate the Isolated Island
     Solution sol;
-    bool hasIalatedIsland = sol.findIslatedIsland(graph, rows, cols);
+    sol.leftToRight(graph, rows, cols);
+    sol.topToBottom(graph, rows, cols);
+    int results = sol.countIsolatedIsland(graph, rows, cols);
 
-    // Print the result
-    std::cout << hasIalatedIsland << std::endl;
-
-}
+    std::cout << results << std::endl;
+    
+    return 0;
+};
