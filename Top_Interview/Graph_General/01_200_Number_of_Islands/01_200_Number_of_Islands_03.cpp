@@ -86,6 +86,7 @@ Input: grid = [
 #include <utility>
 
 class Solution {
+  
   public:
   int countIslands(std::vector<std::vector<char>>& graph, int rows, int cols) {
     // Calculate the island
