@@ -126,6 +126,5 @@ int main(){
 
 /**
  * 1. int dir[4][2] --> 這種寫法為 C-style。如果要統一 C++，可以使用 std::array
- * std::array<std::pair<int, int>, DIRECTION_COUNT> directions = {{{-1, 0}, {1, 0}, {0, 1}, {0, -1}}};
- * 
+ * --> std::array<std::pair<int, int>, DIRECTION_COUNT> directions = {{{-1, 0}, {1, 0}, {0, 1}, {0, -1}}};
  */
