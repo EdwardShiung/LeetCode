@@ -33,8 +33,9 @@
  *
  *
  *  [Thought]:
- *  1. 使用 BFS 
+ *  1. 使用 DFS 
  */
+
 
 #include <iostream>
 #include <vector>
@@ -42,27 +43,20 @@
 #define DIRECTION_COUNT 4
 
 class Solution {
-
     public:
-
     //Turn the '1' to '2' in the side of graph
     //Left & Right
     void leftToRight(std::vector<std::vector<char>>& graph, int rowCount, int colCount) {
         for(int i = 0; i < rowCount; i++) {
-            //Left
-            if(graph[i][0] == '1') bfs(graph, i, 0);
-            //Right
-            if(graph[i][colCount - 1] == '1') bfs(graph, i, colCount - 1);
+            if(graph[i][0] == '1') dfs(graph, i, 0);
+            if(graph[i][colCount - 1] == '1') dfs(graph, i, colCount - 1);
         }
-    };
-
-    //Top & Bottom
+    };  
+    // Top & Bottom
     void topToBottom(std::vector<std::vector<char>>& graph, int rowCount, int colCount) {
         for(int j = 0; j < colCount; j++) {
-            //Top
-            if(graph[0][j] == '1') bfs(graph, 0, j);
-            //Bottom
-            if(graph[rowCount - 1][j] == '1') bfs(graph, rowCount - 1, j);
+            if(graph[0][j] == '1') dfs(graph, 0, j);
+            if(graph[rowCount - 1][j] == '1') dfs(graph, rowCount - 1, j);
         }
     };
 
@@ -70,9 +64,7 @@ class Solution {
     void graphTransfer_01(std::vector<std::vector<char>>& graph) {
         for(std::vector<char>& row : graph) {
             for(char& cell : row) {
-                if(cell == '1') {
-                    cell = '0';
-                }
+                if(cell == '1') cell = '0';
             }
         }
     };
@@ -81,55 +73,46 @@ class Solution {
     void graphTransfer_02(std::vector<std::vector<char>>& graph) {
         for(std::vector<char>& row : graph) {
             for(char& cell : row) {
-                if(cell == '2') {
-                    cell = '1';
-                }
+                if(cell == '2') cell = '1';
             }
         }
     };
 
-
     private:
-    // Coordinator of 4 directions
+
+    // Coordinator of 4 Directions
     int dir[DIRECTION_COUNT][2] = {
         {-1, 0},    //up
         {1, 0},     //down
         {0, -1},    //left
         {0, 1},     //right
+
+
+        
     };
 
-    // bfs
-    void bfs(std::vector<std::vector<char>>& graph, int currRow, int currCol) {
+    // DFS
+    void dfs(std::vector<std::vector<char>>& graph, int currRow, int currCol) {
+        // Set the current cell to '2'
         graph[currRow][currCol] = '2';
-        // Using a queue to assist the process
-        std::queue<std::pair<int, int>> queue;
-        queue.push({currRow, currCol});
-        while(!queue.empty()) {
-            // Read current cell of X and Y
-            std::pair<int, int> curr = queue.front();
-            queue.pop();
-            int currX = curr.first;
-            int currY = curr.second;
-            for(int i = 0; i < DIRECTION_COUNT; i++) {
-                int nextX = currX + dir[i][0];
-                int nextY = currY + dir[i][1];
+        // Iterative the neighbors around the cell
+        for(int i = 0;  i < DIRECTION_COUNT; i++) {
+            int nextX = currRow + dir[i][0];
+            int nextY = currCol + dir[i][1];
 
-                // Limitation 
-                if(nextX < 0 || nextX >= graph.size() || nextY < 0 || nextY > graph[0].size()) continue;
-                if(graph[nextX][nextY] == '1') {
-                    bfs(graph, nextX, nextY);
-                    graph[nextX][nextY] = '2';
-                }
+            // Limitation
+            if(nextX < 0 || nextX >= graph.size() || nextY < 0 || nextY >= graph[0].size()) continue;
+            if(graph[nextX][nextY] == '1'){
+                graph[nextX][nextY] = '2';
+                dfs(graph, nextX, nextY);
             }
         }
-    };
+    }
 };
 
-
-
-// Function to create a graph
+// Function to Create a Graph
 std::vector<std::vector<char>> createGraph(int rowCount, int colCount) {
-    // Initialize a 2D Graph
+    // Initialized a Graph
     std::vector<std::vector<char>> graph(rowCount, std::vector<char>(colCount));
     for(int i = 0; i < rowCount; i++) {
         for(int j = 0; j < colCount; j++) {
@@ -139,7 +122,7 @@ std::vector<std::vector<char>> createGraph(int rowCount, int colCount) {
     return graph;
 };
 
-// Function to Print the Graph
+// Print the Graph
 void printGraph(const std::vector<std::vector<char>>& graph) {
     for(const std::vector<char> row : graph) {
         for(const char cell : row) {
@@ -149,16 +132,15 @@ void printGraph(const std::vector<std::vector<char>>& graph) {
     }
 };
 
-
 int main() {
     int rows, cols;
     std::cin >> rows >> cols;
 
-    //Create a graph
+    // Create a Graph
     std::vector<std::vector<char>> graph = createGraph(rows, cols);
-    
-    //Print the Initialize Graph
-    std::cout << "Initialized a Graph: '" << std::endl;
+
+    // Print a Graph
+    std::cout << "Initialized a Graph: " << std::endl;
     printGraph(graph);
     //Transfer '1' to '2'
     std::cout << "Transfer '1' to '2'" << std::endl;
@@ -174,22 +156,5 @@ int main() {
     sol.graphTransfer_02(graph);
     std::cout << "Transfer '2' to '1'" << std::endl;
     printGraph(graph);
-
     return 0;
 }
-
-/**
- * "&"：即使參數已經取址，在 for 迴圈時，依舊要使用！不要忘記！
-
-    //Transfer the cell which has '1' to '0' and Printout
-    void graphTransfer_01(std::vector<std::vector<char>>& graph) {
-        for(std::vector<char>& row : graph) {
-            for(char& cell : row) {
-                if(cell == '1') {
-                    cell = '0';
-                }
-            }
-        }
-    };
- * 
- */
