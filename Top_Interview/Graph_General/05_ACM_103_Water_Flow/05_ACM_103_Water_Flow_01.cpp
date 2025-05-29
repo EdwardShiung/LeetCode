@@ -44,7 +44,8 @@
  * [Thought]
  * 1. 題目要找到，哪些格子，可以到達第一邊界（左邊和上邊），並且也可以到達第二邊界（右邊和下邊）。
  * 這題可以用 BFS、DFS或並查集來解決！
- * 2. 本題用 DFS 
+ * 2. 本題思路就是：水由高處流向低處，並且測試每一個點可以到達第一邊界和第二邊界
+ * 3. 本題使用 DFS
  */
 
 #include <iostream>
@@ -129,6 +130,7 @@ class Solution {
 
             // Limitation
             if(nextX < 0 || nextX >= graph.size() || nextY < 0 || nextY >= graph[0].size()) continue;
+            // [Key Point]: 水從高處流向低處 （低到高，流不過去啊！）
             if(graph[currRow][currCol] < graph[nextX][nextY]) continue;
             
             dfs(graph, visited, nextX, nextY);
