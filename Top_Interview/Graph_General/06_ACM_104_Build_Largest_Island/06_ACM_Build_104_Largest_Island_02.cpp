@@ -28,13 +28,6 @@
 1 <= M, N <= 50。
  * 
  * 
- *  [Thought]:
- *  1. File 01 雖然記錄了整個棋盤最大的島嶼，但缺點是，我沒有將個別島嶼一一做紀錄。
- *  這樣的問題是，如果其中一格，可以連接兩座不同島嶼，形成更大的島嶼，在沒有 hashmap 的支援下，
- *  無法形成連接，導致無法找出最大面積的島嶼！
- * 
- * 
- * 
  */
 
 #include <iostream>
@@ -52,7 +45,7 @@ class Solution {
         // Store all areas of islands
         std::vector<int> islandAreas;
         int maxArea = 0;
-        
+
         // Step 01: Store each area of island
         for(int i = 0; i < rowCount; i++) {
             for(int j = 0; j < colCount; j++) {
@@ -62,7 +55,7 @@ class Solution {
                     // std::cout << countArea << std::endl;
                     islandAreas.push_back(countArea);
                     //maxArea = std::max(maxArea, countArea);
-                }
+                }       
             }
         }
 
