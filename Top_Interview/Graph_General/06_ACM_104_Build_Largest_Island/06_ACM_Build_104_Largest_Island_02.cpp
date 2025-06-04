@@ -32,101 +32,54 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <unordered_set>
+#include <unordered_map>
 
-#define DIRECTION_COUNT 4
 
 class Solution {
+    
     public:
-    int buildMaxIsland(std::vector<std::vector<int>>& graph, int rowCount, int colCount) {
-        // Using the visited record 
-        std::vector<std::vector<int>> visited = graph;
-        // Store all areas of islands
-        std::vector<int> islandAreas;
-        int maxArea = 0;
-
-        // Step 01: Store each area of island
-        for(int i = 0; i < rowCount; i++) {
+    // Step 01: Record the area of each island in the hashmap
+    std::unordered_map<int, int> recordArea(std::vector<std::vector<int>>& graph, int rowCount, int colCount) {
+         // Initialize a hashmap (key, area)
+         std::unordered_map<int, int> areaRecord;
+         // Start from 2 to differentiate from land (1) and water (0)
+         int islandId = 2;
+         for(int i = 0; i < rowCount; i++) {
             for(int j = 0; j < colCount; j++) {
                 if(graph[i][j] == 1) {
-                    int countArea = 0;
-                    dfs(graph, i, j, countArea);
-                    // std::cout << countArea << std::endl;
-                    islandAreas.push_back(countArea);
-                    //maxArea = std::max(maxArea, countArea);
-                }       
-            }
-        }
-
-        // Step 02: Convert each water cell to land and calculate the maximum area
-        for(int i = 0; i < rowCount; i++) {
-            for(int j = 0; j < colCount; j++) {
-                if(visited[i][j] == 0) {
-                    // Convert 0 to 1 (Convert water to land)
-                    int newArea = 1;
-                    std::unordered_set<int> connectedIslands;
-                    for(int k = 0; k < DIRECTION_COUNT; k++) {
-                        int nextX = i + dir[k][0];
-                        int nextY = j + dir[k][1];
-
-                        if(nextX < 0 || nextX >= rowCount || nextY < 0 || nextY >= colCount) continue;
-                        if(graph[nextX][nextY] == -1) {
-                            // 這部分非常不對！
-                            std::cout << nextX * colCount + nextY << std::endl;
-                            connectedIslands.insert(nextX * colCount + nextY);
-                        }
-                    }
-                    // 這部分非常不好！
-                    for(int island : connectedIslands) {
-                        newArea += islandAreas[island];
-                    }
-                    maxArea = std::max(maxArea, newArea);
+                    int count = 0;
+                    dfs(graph, i, j, islandId, count);
+                    // Increment islandId for the next island
+                    islandId++;
                 }
             }
-        }
-        return maxArea;
-    };
+         }
+         return areaRecord;
+    };  
+
+    // Step 02: Calcuate the area after flip the "0" cell to "1"
+    int findLargestArea(std::vector<std::vector<int>>& graph) {
+        
+    }
     private:
-    int dir[DIRECTION_COUNT][2] = {
-        {-1, 0},    //up
-        {1, 0},     //down
-        {0, -1},    //left
-        {0, 1}      //right
-    };
-    void dfs(std::vector<std::vector<int>>& graph, int currRow, int currCol, int& countArea) {
-        graph[currRow][currCol] = -1;
-        countArea++;
-        for(int i = 0; i < DIRECTION_COUNT; i++) {
-            int nextX = currRow + dir[i][0];
-            int nextY = currCol + dir[i][1];
-            
-            // Limitation
-            if(nextX < 0 || nextX >= graph.size() || nextY < 0 || nextY >= graph[0].size()) continue;
-            if(graph[nextX][nextY] == 1) {
-                dfs(graph, nextX, nextY, countArea);
-            }
-        }
-    };
+    void dfs(std::vector<std::vector<int>>& graph, int currRow, int currCol, int& islandId, int& count) {
+
+    }
 };
 
-
-// Function: Create the Graph
+// Create a Graph
 std::vector<std::vector<int>> createGraph(int rowCount, int colCount) {
-    // Initialize the graph
+    // Initialize a graph
     std::vector<std::vector<int>> graph(rowCount, std::vector<int>(colCount));
-    
-    // for-loop to generate the graph
     for(int i = 0; i < rowCount; i++) {
         for(int j = 0; j < colCount; j++) {
             std::cin >> graph[i][j];
         }
     }
-
     return graph;
 };
 
-// Function: Print the Graph
+// Print the Graph
 void printGraph(const std::vector<std::vector<int>>& graph) {
     for(const std::vector<int> row : graph) {
         for(const int cell : row) {
@@ -136,19 +89,15 @@ void printGraph(const std::vector<std::vector<int>>& graph) {
     }
 };
 
-int main(){
+
+ int main () {
+    
+    // Initialize the rows and columns
     int rows, cols;
     std::cin >> rows >> cols;
 
-    // Create the Graph
+    // Create a graph
     std::vector<std::vector<int>> graph = createGraph(rows, cols);
 
-    // Print the Graph
-    printGraph(graph);
-
-    // Calculate the results
-    Solution sol;
-    int results = sol.buildMaxIsland(graph, rows, cols);
-    std::cout << results << std::endl;
     return 0;
-}
+ }
