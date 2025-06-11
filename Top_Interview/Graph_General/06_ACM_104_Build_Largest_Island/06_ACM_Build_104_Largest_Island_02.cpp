@@ -33,44 +33,93 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
 
+// Define Direction Count
+#define DIRECTION_COUNT 4
 
 class Solution {
-    
     public:
-    // Step 01: Record the area of each island in the hashmap
-    std::unordered_map<int, int> recordArea(std::vector<std::vector<int>>& graph, int rowCount, int colCount) {
-         // Initialize a hashmap (key, area)
-         std::unordered_map<int, int> areaRecord;
-         // Start from 2 to differentiate from land (1) and water (0)
-         int islandId = 2;
-         for(int i = 0; i < rowCount; i++) {
+
+    // Using the hashmap to record the area 
+    std::unordered_map<int, int> recordArea;
+
+    // Record the Area in hashmap for each block
+    void recordMaxArea(std::vector<std::vector<int>>& graph, int rowCount, int colCount, std::unordered_map<int, int>& recordArea) {
+        // Label the block by beginning number 2
+        int label = 2;
+        for(int i = 0; i < rowCount; i++) {
             for(int j = 0; j < colCount; j++) {
                 if(graph[i][j] == 1) {
-                    int count = 0;
-                    dfs(graph, i, j, islandId, count);
-                    // Increment islandId for the next island
-                    islandId++;
+                    int countArea = 0;
+                    dfs(graph, i, j, countArea, label);
+                    recordArea[label] = countArea;
+                    label++;
                 }
             }
-         }
-         return areaRecord;
-    };  
+        }
+    };
 
-    // Step 02: Calcuate the area after flip the "0" cell to "1"
-    int findLargestArea(std::vector<std::vector<int>>& graph) {
-        
-    }
-    private:
-    void dfs(std::vector<std::vector<int>>& graph, int currRow, int currCol, int& islandId, int& count) {
+    // Find the Max Area
+    int findMaxArea(std::vector<std::vector<int>>&graph, int rowCount, int colCount, std::unordered_map<int, int>& recordArea) {
+        // Initialize Maximum
+        int maxArea = 0;
+        // Using the unordered_set to record the area
+        std::unordered_set<int> setArea;
+        for(int i = 0; i < rowCount; i++) {
+            for(int j = 0; j < colCount; j++) {
+                if(graph[i][j] == 0) {
+                    // Re-calculate the area
+                    int countArea = 1;
+                    
+                    for(int k = 0; k < DIRECTION_COUNT; k++) {
+                        int nextRow = i + dir[k][0];
+                        int nextCol = j + dir[k][1];
+                        
+                        if(nextRow >= 0 && nextRow < rowCount && nextCol >= 0 && nextCol < colCount && recordArea[graph[nextRow][nextCol]] && !setArea.count(graph[nextRow][nextCol])){
+                            countArea = countArea + recordArea[graph[nextRow][nextCol]];
+                            setArea.insert(graph[nextRow][nextCol]);
+                        }
+                    }
+                    maxArea = countArea > maxArea ? countArea : maxArea;
+                }
 
+            }
+        }
+        return maxArea;
+    };
+
+    private:  
+
+    // Initialize a dir
+    int dir[DIRECTION_COUNT][2] = {
+        {-1, 0},    // UP
+        {1, 0},     // Down
+        {0, -1},    // Left
+        {0, 1},     // Right
+    };
+
+    // DFS 
+    void dfs(std::vector<std::vector<int>>& graph, int currRow, int currCol, int& countArea, int& label) {
+        graph[currRow][currCol] = label;
+        countArea++;
+
+        for(int i = 0; i < DIRECTION_COUNT; i++) {
+            int nextRow = currRow + dir[i][0];
+            int nextCol = currCol + dir[i][1];
+            if(nextRow >= 0 && nextRow < graph.size() && nextCol >= 0 && nextCol < graph[0].size() && graph[nextRow][nextCol] == 1) {
+                graph[nextRow][nextCol] = label;
+                dfs(graph, nextRow, nextCol, countArea, label);
+            }
+        }
     }
+
 };
 
-// Create a Graph
 std::vector<std::vector<int>> createGraph(int rowCount, int colCount) {
-    // Initialize a graph
+    // Initialize the Graph
     std::vector<std::vector<int>> graph(rowCount, std::vector<int>(colCount));
+
     for(int i = 0; i < rowCount; i++) {
         for(int j = 0; j < colCount; j++) {
             std::cin >> graph[i][j];
@@ -79,7 +128,6 @@ std::vector<std::vector<int>> createGraph(int rowCount, int colCount) {
     return graph;
 };
 
-// Print the Graph
 void printGraph(const std::vector<std::vector<int>>& graph) {
     for(const std::vector<int> row : graph) {
         for(const int cell : row) {
@@ -89,15 +137,25 @@ void printGraph(const std::vector<std::vector<int>>& graph) {
     }
 };
 
-
- int main () {
-    
-    // Initialize the rows and columns
+int main() {
     int rows, cols;
     std::cin >> rows >> cols;
 
-    // Create a graph
+    // Create a Graph
     std::vector<std::vector<int>> graph = createGraph(rows, cols);
 
+    // Print the Graph
+    printGraph(graph);
+
+    // Call the solution class to deal with the Graph
+    Solution sol;
+
+
+    sol.recordMaxArea(graph, rows, cols, sol.recordArea);
+
+    int result = sol.findMaxArea(graph, rows, cols, sol.recordArea);
+
+    std::cout << result << std::endl;
+
     return 0;
- }
+};
