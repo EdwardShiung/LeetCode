@@ -77,7 +77,6 @@ int main() {
 
     // Import the Solution Class
     Solution sol;
-    
 
     return 0;
 }
