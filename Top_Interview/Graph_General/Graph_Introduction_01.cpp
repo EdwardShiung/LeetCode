@@ -1,6 +1,6 @@
 #include <iostream>
 
-/**
+/** Graph 重要概念
  * 1. Type of Graph
  *  - Directed Graph (有向圖)
  *  - Undirected Graph (無向圖)
