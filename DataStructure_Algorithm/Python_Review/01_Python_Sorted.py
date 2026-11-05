@@ -18,6 +18,3 @@ Timsort 的主要特點包括：
 在你的程式碼中，num.sort() 使用的就是 Timsort 算法。
 
 '''
-
-class Solution:
-    

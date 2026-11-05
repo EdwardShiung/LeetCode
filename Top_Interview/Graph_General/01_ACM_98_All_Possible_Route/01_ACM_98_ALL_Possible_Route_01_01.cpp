@@ -128,7 +128,6 @@ int main(){
         Node3 5
         Node4 5
         Node5
-     * 
      */
 
     // 無論什麼路徑，path 都從 1 開始
@@ -146,6 +145,5 @@ int main(){
     //     }
     //     std::cout << std::endl;
     // }
-    
     return 0;
 }
